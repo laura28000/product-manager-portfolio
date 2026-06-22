@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useCallback } from "react"
-import { ChevronDown, ChevronUp, ChevronLeft, ChevronRight, ExternalLink, X, ZoomIn, Code2 } from "lucide-react"
+import { ChevronDown, ChevronUp, ChevronLeft, ChevronRight, ExternalLink, X, ZoomIn, Code2, GitBranch } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
@@ -582,7 +582,8 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="border-t border-border pt-12"
         >
-          <div className="bg-card border border-border rounded-xl p-6 max-w-2xl hover:border-primary/40 transition-colors duration-300">
+          <div className="flex flex-col gap-4 max-w-2xl">
+          <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/40 transition-colors duration-300">
             <div className="flex items-start gap-4 mb-4">
               <div
                 className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
@@ -614,6 +615,45 @@ export default function Projects() {
                 </span>
               ))}
             </div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="bg-card border border-border rounded-xl p-6 hover:border-primary/40 transition-colors duration-300"
+          >
+            <div className="flex items-start gap-4 mb-4">
+              <div
+                className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
+                style={{ background: "var(--teal-dim)" }}
+              >
+                <GitBranch size={18} style={{ color: "var(--teal)" }} />
+              </div>
+              <div>
+                <p
+                  className="text-xs font-semibold tracking-widest uppercase mb-1.5"
+                  style={{ color: "var(--teal)" }}
+                >
+                  Refonte portfolio en approche Product Builder
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  J&apos;ai traité la refonte de ce portfolio comme un chantier produit : récupération de la codebase, audit du positionnement, alignement avec mon CV, priorisation des améliorations, ajustements UX/UI, build local puis déploiement Vercel avec Claude Code.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-2 pl-14">
+              {["Audit produit", "Alignement contenu", "Claude Code", "VS Code", "pnpm build", "Vercel"].map((s) => (
+                <span
+                  key={s}
+                  className="px-2.5 py-1 rounded text-xs text-muted-foreground bg-secondary border border-border"
+                >
+                  {s}
+                </span>
+              ))}
+            </div>
+          </motion.div>
           </div>
         </motion.div>
 
