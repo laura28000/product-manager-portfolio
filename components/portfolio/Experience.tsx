@@ -49,14 +49,14 @@ const certifications = [
 const experiences = [
   {
     period: "juil. 2022 – juil. 2025",
-    title: "Chef d'équipe production",
+    title: "Associée des opérations | Superviseur de Production",
     company: "Aptiv — Épernon",
     description:
       "Management d'équipes internes et intérimaires dans un environnement industriel automobile exigeant, avec des enjeux forts de qualité, performance, sécurité et continuité opérationnelle.",
     project: {
       label: "Projet de transformation digitale",
       title: "Programme de Transformation Digitale des Processus Opérationnels",
-      text: "Transformation de plusieurs processus papier en solution digitale orientée utilisateurs afin d'améliorer la traçabilité, la fiabilité des données et l'expérience terrain. Pilotage opérationnel du projet, implication de tous les métiers, test utilisateur en production, mise en œuvre progressive et mesure de l'adoption.",
+      text: "Digitalisation d'un processus critique de traçabilité (Aquiweb) afin d'améliorer la qualité, la conformité et la performance opérationnelle. Immersion terrain auprès des équipes pour comprendre les usages et les irritants, fédération direction / qualité / production / équipe digitale, déploiement avec formation, accompagnement au changement et itérations jusqu'à adoption complète.",
     },
     results: null,
     skills: [

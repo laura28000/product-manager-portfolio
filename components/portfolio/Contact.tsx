@@ -60,7 +60,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-muted-foreground leading-relaxed"
           >
-            Qu&apos;il s&apos;agisse d&apos;améliorer un processus, d&apos;aligner des équipes, de structurer un produit ou d&apos;exploiter les opportunités offertes par l&apos;IA, j&apos;aime comprendre ce qui bloque, fédérer les acteurs concernés et transformer des problématiques complexes en solutions concrètes.
+            Product Building, transformation digitale, structuration produit ou exploitation de l&apos;IA : j&apos;aime comprendre les vrais problèmes, construire les bonnes solutions et les faire adopter par le terrain.
           </motion.p>
         </div>
 

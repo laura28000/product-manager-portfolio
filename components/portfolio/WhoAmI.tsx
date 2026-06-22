@@ -37,8 +37,8 @@ const cards = [
   {
     icon: Code2,
     number: "06",
-    title: "IA appliquée & automatisation pragmatique",
-    text: "Je considère l'IA et l'automatisation comme des moyens, jamais comme une finalité. Mon approche consiste à identifier les cas d'usage pertinents, simplifier les tâches répétitives et améliorer la performance lorsque le gain est réel et mesurable.",
+    title: "Product Building & IA",
+    text: "J'utilise l'IA comme copilote de Product Building : Product Discovery assistée, prototypage accéléré, exploration de codebase avec Claude Code, diagnostic et correction de bugs, implémentation de fonctionnalités et génération de Pull Requests GitHub. Une collaboration technique concrète avec les équipes dev, sans être développeuse.",
   },
 ]
 
@@ -106,24 +106,14 @@ export default function WhoAmI() {
           className="max-w-3xl mb-16 space-y-4 text-muted-foreground leading-relaxed text-sm"
         >
           <p>
-            Une maturité opérationnelle forte, une intelligence relationnelle éprouvée, une culture
-            produit structurée et une capacité à conduire le changement de manière concrète et mesurable.
+            Une maturité opérationnelle forte, une culture produit structurée et une capacité à
+            traduire les contraintes terrain en décisions actionnables. J&apos;évolue avec la même
+            aisance auprès d&apos;opérateurs, de développeurs, de responsables qualité ou de directions.
           </p>
           <p>
-            Reconnue pour ma capacité à adapter ma communication aux interlocuteurs, créer de
-            l&apos;adhésion et fédérer autour d&apos;un objectif commun, j&apos;évolue avec la
-            même aisance auprès d&apos;opérateurs, d&apos;ingénieurs, de responsables qualité,
-            de fonctions support ou de directions.
-          </p>
-          <p>
-            J&apos;aime comprendre ce qui bloque, identifier les goulots d&apos;étranglement,
-            structurer les priorités et construire des solutions adaptées au contexte humain,
-            opérationnel et business.
-          </p>
-          <p>
-            Ma valeur ajoutée réside autant dans ma compréhension des personnes et des
-            organisations que dans ma capacité à mobiliser les bons outils pour résoudre les
-            problèmes.
+            Ma valeur ajoutée réside dans ma compréhension des personnes, des organisations et des
+            systèmes — et dans ma capacité à mobiliser les bons leviers, humains et technologiques,
+            pour construire des solutions adoptées par le terrain.
           </p>
         </motion.div>
 

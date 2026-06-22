@@ -62,7 +62,17 @@ export default function Hero() {
               className="text-xl font-semibold mb-1"
               style={{ color: "var(--teal)" }}
             >
-              Product Manager hybride | Terrain · Business · IA · Delivery
+              Product Manager · Product Builder
+            </motion.p>
+
+            {/* Positioning line */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+              className="text-sm font-medium text-muted-foreground mb-3 tracking-wide"
+            >
+              Terrain · Business · IA · Delivery
             </motion.p>
 
             {/* Sub-badge */}
@@ -91,11 +101,10 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
               className="text-base text-muted-foreground max-w-xl leading-relaxed mb-5 text-pretty"
             >
-              J&apos;aide les organisations à transformer des problématiques complexes en solutions
-              concrètes en créant des ponts entre les{" "}
-              <strong className="text-foreground font-medium">métiers</strong>,{" "}
-              les <strong className="text-foreground font-medium">utilisateurs</strong> et{" "}
-              la <strong className="text-foreground font-medium">technologie</strong>.
+              Construire des produits avec les{" "}
+              <strong className="text-foreground font-medium">utilisateurs</strong>,
+              guidés par la <strong className="text-foreground font-medium">donnée</strong> et
+              adoptés par le <strong className="text-foreground font-medium">terrain</strong>.
             </motion.p>
 
             {/* Intro */}
@@ -105,10 +114,9 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="text-sm text-muted-foreground max-w-xl leading-relaxed text-pretty"
             >
-              Après plus de 12 ans à piloter des équipes, coordonner des parties prenantes et conduire
-              l&apos;amélioration continue dans des environnements industriels exigeants, j&apos;ai
-              orienté mon parcours vers le Product Management avec une conviction forte : faire avancer
-              les sujets, aligner les acteurs et générer un impact business mesurable.
+              Après plus de 12 ans à fédérer des équipes, aligner des parties prenantes et piloter des
+              transformations dans des environnements exigeants, j&apos;identifie des opportunités,
+              construis des solutions, mesure leur impact et les fais évoluer jusqu&apos;à leur adoption.
             </motion.p>
           </div>
 
@@ -151,12 +159,11 @@ export default function Hero() {
             href="#contact"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.98 }}
-            className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-md font-semibold text-sm overflow-hidden transition-all duration-300 hover:shadow-lg"
-            style={{ background: "var(--teal)", color: "white" }}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-md font-semibold text-sm transition-all duration-300 hover:shadow-lg"
+            style={{ background: "transparent", color: "var(--teal)", border: "1.5px solid var(--teal)" }}
           >
-            <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500 skew-x-12" />
-            <span className="relative z-10">Me contacter pour échanger</span>
-            <span className="relative z-10 w-2 h-2 rounded-full bg-white animate-pulse" />
+            <span>Me contacter pour échanger</span>
+            <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "var(--teal)" }} />
           </motion.a>
         </motion.div>
       </div>

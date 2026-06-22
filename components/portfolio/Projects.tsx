@@ -16,7 +16,7 @@ const caseStudies = [
     title: "ProductSignal — Analyser les offres PM, scorer la compatibilité et affiner son positionnement",
     subtitle: "Problem framing · IA appliquée · Score automatisé · Delivery",
     description:
-      "Conception d'un outil IA personnel en cours de développement : analyse d'offres Product Manager, score de compatibilité, identification des gaps et aide au positionnement pour chaque candidature.",
+      "Conception d'un outil IA personnel en cours de développement : analyse d'offres Product Manager, score de compatibilité, identification des gaps et aide au positionnement pour chaque candidature. Projet portfolio, en cours d'itération.",
     problem:
       "En reconversion vers le Product Management, trouver les offres vraiment pertinentes et formuler un positionnement précis pour chaque candidature demande un effort cognitif élevé. Lire des dizaines d'offres, identifier les exigences implicites, évaluer ses forces et ses gaps en temps réel : aucun outil existant ne permettait ce niveau d'analyse personnalisée et contextuelle.",
     approach:
@@ -55,7 +55,7 @@ const caseStudies = [
     problem:
       "Les recruteurs recherchent des profils expérimentés, mais l'audience du jobboard reste majoritairement orientée profils juniors. Écart de conversion significatif identifié entre les deux segments : enjeu business direct sur la valeur perçue de la plateforme.",
     approach:
-      "Immersion dans le problème : analyse des données, interviews utilisateurs, benchmark concurrentiel. Identification des freins réels (filtres incomplets, faible visibilité full remote, manque de personnalisation). Priorisation RICE pour arbitrer les opportunités à fort impact et aligner les décisions sur des données tangibles.",
+      "Immersion dans le problème : analyse SQL des données de conversion, 5 interviews utilisateurs, benchmark concurrentiel. Identification des freins réels (filtres incomplets, faible visibilité full remote, manque de personnalisation). Priorisation RICE pour arbitrer les opportunités à fort impact et aligner les décisions sur des données tangibles.",
     solution:
       "Roadmap structurée autour des leviers à plus fort ROI, story maps candidat & recruteur, backlog priorisé et KPIs définis par phase. Chaque décision justifiée par la compréhension du problème, l'analyse des données et l'impact business attendu.",
     results: [
@@ -64,7 +64,7 @@ const caseStudies = [
       "Leviers de conversion priorisés sur la base des données",
       "Roadmap, KPIs et go-to-market structurés et actionnables",
     ],
-    skills: ["Compréhension du problème", "User Research", "Analyse data", "Priorisation RICE", "Roadmap", "KPIs", "Prise de décision"],
+    skills: ["Compréhension du problème", "User Research", "Analyse SQL", "Priorisation RICE", "Roadmap", "KPIs", "Prise de décision"],
     color: "var(--teal)",
     images: [
       { src: "/projects/wttj-title.png", alt: "Welcome to the Jungle — Projet Join Maestro" },
@@ -79,7 +79,7 @@ const caseStudies = [
     title: "Baume — Concevoir un espace communautaire sécurisé autour d'un besoin utilisateur sensible",
     subtitle: "Empathie · Cadrage · Coordination produit/tech · Delivery",
     description:
-      "Conception d'un espace communautaire autour d'un besoin utilisateur sensible : accompagner les femmes en rupture sentimentale dans un environnement rassurant, sécurisé et bienveillant.",
+      "Conception et livraison en 2 semaines d'un espace communautaire autour d'un besoin utilisateur sensible : accompagner les femmes en rupture sentimentale dans un environnement rassurant, sécurisé et bienveillant.",
     problem:
       "Un besoin réel, fort et sous-adressé : des femmes traversant une rupture cherchent soutien, ressources et communauté, mais les espaces existants ne répondent pas à la sensibilité et à la sécurité que ce contexte exige. Comment créer une expérience digitale à la hauteur de ce besoin ?",
     approach:
@@ -87,7 +87,7 @@ const caseStudies = [
     solution:
       "MVP mobile livré de bout en bout : onboarding personnalisé et rassurant, fil communautaire modéré, ressources d'accompagnement et ateliers virtuels. Un produit cohérent entre vision, besoins utilisateurs, faisabilité technique et exécution.",
     results: [
-      "MVP cadré autour d'un besoin utilisateur réel et sensible",
+      "MVP mobile livré en production en 2 semaines",
       "Parcours empathique conçu avec soin et cohérence",
       "Coordination produit/tech efficace du cadrage au delivery",
       "Communauté sécurisée et espace de confiance opérationnel",
