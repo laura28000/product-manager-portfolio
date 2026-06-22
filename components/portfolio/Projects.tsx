@@ -599,7 +599,7 @@ export default function Projects() {
                   Compréhension technique produit
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Compréhension des stacks front/back, API, bases de données et déploiement pour mieux cadrer les besoins, dialoguer avec les développeurs et suivre la delivery. Projets de formation disponibles sur demande.
+                  Compréhension des stacks front/back, API, bases de données et déploiement pour mieux cadrer les besoins, dialoguer avec les développeurs et suivre la delivery.
                 </p>
               </div>
             </div>
