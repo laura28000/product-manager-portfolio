@@ -72,7 +72,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
               className="text-sm font-medium text-muted-foreground mb-3 tracking-wide"
             >
-              Terrain · Business · IA · Delivery
+              Terrain · Business · IA · Transformation digitale
             </motion.p>
 
             {/* Sub-badge */}
