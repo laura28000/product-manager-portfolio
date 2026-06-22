@@ -1,6 +1,6 @@
 "use client"
 
-import { Search, Target, BarChart3, Cog, Rocket } from "lucide-react"
+import { Search, Target, BarChart3, Cog, Rocket, Bot } from "lucide-react"
 import { motion } from "framer-motion"
 
 const skillGroups = [
@@ -38,6 +38,13 @@ const skillGroups = [
     description:
       "Structurer le lancement, aligner les parties prenantes et piloter l'adoption. Mon background terrain m'a appris qu'un produit ne vit que s'il est adopté, par le terrain et par les utilisateurs.",
     skills: ["Go-to-Market", "Growth", "Stakeholder Management"],
+  },
+  {
+    icon: Bot,
+    title: "IA & automatisation produit",
+    description:
+      "Utiliser l'IA et l'automatisation comme leviers de Product Building : veille, benchmark, synthèse de feedbacks, aide à la priorisation, génération de livrables PM et automatisation de workflows métier avec Make, n8n ou Zapier.",
+    skills: ["IA appliquée", "Claude Code", "Make / n8n", "Zapier", "Workflows", "Product Building"],
   },
 ]
 
