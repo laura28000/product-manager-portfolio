@@ -72,6 +72,8 @@ const caseStudies = [
     skills: ["Cadrage MVP", "IA appliquée", "Scoring", "Claude Code", "Problem framing", "Positionnement candidat"],
     color: "oklch(0.55 0.2 260)",
     images: [] as ProjectImage[],
+    link: "https://stitch.withgoogle.com/preview/1191489258350450361?node-id=3c006e9634c34977b7eb2bd608b1ef58",
+    linkLabel: "Voir le prototype",
   },
   {
     number: "03",
