@@ -642,7 +642,7 @@ export default function Projects() {
               </div>
             </div>
             <div className="flex flex-wrap gap-2 pl-14">
-              {["v0 / Vercel", "Codebase", "Audit produit", "Claude Code", "pnpm build", "Déploiement Vercel"].map((s) => (
+              {["v0 / Vercel", "Codebase", "Audit produit", "Claude Code", "VS Code", "Déploiement Vercel"].map((s) => (
                 <span
                   key={s}
                   className="px-2.5 py-1 rounded text-xs text-muted-foreground bg-secondary border border-border"
