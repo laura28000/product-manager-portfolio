@@ -582,7 +582,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="border-t border-border pt-12"
         >
-          <div className="flex flex-col gap-4 max-w-2xl">
+          <div className="grid md:grid-cols-2 gap-4">
           <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/40 transition-colors duration-300">
             <div className="flex items-start gap-4 mb-4">
               <div
@@ -596,12 +596,10 @@ export default function Projects() {
                   className="text-xs font-semibold tracking-widest uppercase mb-1.5"
                   style={{ color: "var(--teal)" }}
                 >
-                  Technical Product Fluency
+                  Compréhension technique produit
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Compréhension des stacks front/back, API, base de données et déploiement
-                  pour mieux cadrer les besoins, dialoguer avec les développeurs et suivre la delivery.
-                  Projets de formation disponibles sur demande.
+                  Compréhension des stacks front/back, API, bases de données et déploiement pour mieux cadrer les besoins, dialoguer avec les développeurs et suivre la delivery. Projets de formation disponibles sur demande.
                 </p>
               </div>
             </div>
@@ -639,12 +637,12 @@ export default function Projects() {
                   Refonte portfolio en approche Product Builder
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  J&apos;ai traité la refonte de ce portfolio comme un chantier produit : récupération de la codebase, audit du positionnement, alignement avec mon CV, priorisation des améliorations, ajustements UX/UI, build local puis déploiement Vercel avec Claude Code.
+                  Portfolio initialement créé avec v0 / Vercel, puis retravaillé dans une démarche Product Builder : récupération de la codebase, audit du positionnement, alignement avec mon CV, priorisation des améliorations, ajustements UX/UI, build local et redéploiement Vercel avec Claude Code.
                 </p>
               </div>
             </div>
             <div className="flex flex-wrap gap-2 pl-14">
-              {["Audit produit", "Alignement contenu", "Claude Code", "VS Code", "pnpm build", "Vercel"].map((s) => (
+              {["v0 / Vercel", "Codebase", "Audit produit", "Claude Code", "pnpm build", "Déploiement Vercel"].map((s) => (
                 <span
                   key={s}
                   className="px-2.5 py-1 rounded text-xs text-muted-foreground bg-secondary border border-border"
