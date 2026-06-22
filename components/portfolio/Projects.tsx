@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useCallback } from "react"
-import { ChevronDown, ChevronUp, ChevronLeft, ChevronRight, ExternalLink, X, ZoomIn } from "lucide-react"
+import { ChevronDown, ChevronUp, ChevronLeft, ChevronRight, ExternalLink, X, ZoomIn, Code2 } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
@@ -12,43 +12,38 @@ type ProjectImage = { src: string; alt: string }
 const caseStudies = [
   {
     number: "01",
-    tag: "Transformation digitale · Acquisition locale",
-    title: "TVB Jardins — Transformer un besoin terrain en levier d'acquisition local",
-    subtitle: "Compréhension du besoin · Stratégie locale · Confiance · ROI",
+    tag: "Product IA · Candidatures · Positionnement PM",
+    title: "ProductSignal — Analyser les offres PM, scorer la compatibilité et affiner son positionnement",
+    subtitle: "Problem framing · IA appliquée · Score automatisé · Delivery",
     description:
-      "Diagnostic business et stratégie d'acquisition locale pour une TPE : analyse du manque à gagner lié à l'absence de visibilité digitale, création d'un site WordPress de zéro, fiche Google Business Profile, stratégie SEO/conversion à ROI rapide. Résultat : top 10 Google et 25 avis récoltés en 1 mois.",
+      "Conception d'un outil IA personnel en cours de développement : analyse d'offres Product Manager, score de compatibilité, identification des gaps et aide au positionnement pour chaque candidature.",
     problem:
-      "Un artisan reconnu localement pour la qualité de son travail, mais absent du digital. Aucune présence en ligne, aucune visibilité locale structurée, un bouche-à-oreille insuffisant pour soutenir la croissance. Comment construire une présence crédible, génératrice de confiance et d'acquisition, avec un budget maîtrisé ?",
+      "En reconversion vers le Product Management, trouver les offres vraiment pertinentes et formuler un positionnement précis pour chaque candidature demande un effort cognitif élevé. Lire des dizaines d'offres, identifier les exigences implicites, évaluer ses forces et ses gaps en temps réel : aucun outil existant ne permettait ce niveau d'analyse personnalisée et contextuelle.",
     approach:
-      "Écoute du besoin, compréhension du contexte métier et des attentes clients, audit de la concurrence locale, définition d'une stratégie d'acquisition adaptée. Mise en place des bons leviers dans le bon ordre : visibilité, preuve sociale, confiance, conversion.",
+      "Partir du problème vécu, le valider, définir le périmètre minimal utile. Identifier les bons leviers IA : analyse sémantique d'offres, scoring personnalisé, génération de conseils de positionnement. Prototypage rapide, usage quotidien comme boucle de feedback, itérations orientées valeur réelle.",
     solution:
-      "Présence digitale locale opérationnelle : site structuré autour des intentions de recherche clients, Google Business Profile actif avec activation des avis comme levier de réassurance, parcours de contact simplifié. Chaque décision orientée ROI et impact mesurable.",
+      "Outil IA conçu et prototypé : analyse des offres PM, score de compatibilité personnalisé, identification des forces et des gaps, recommandations de positionnement pour chaque candidature et suivi de pipeline. Conçu autour d'un besoin réel, itéré en autonomie produit complète.",
     results: [
-      "TOP 10 résultats Google recherche un mois après la mise en ligne",
-      "25 avis Google obtenus durant le premier mois suivant la mise en ligne",
-      "Visibilité locale construite de zéro, budget maîtrisé",
-      "Acquisition digitale opérationnelle et autonome",
-      "Site en production, référencement local actif",
+      "Besoin réel identifié et validé, outil conçu et prototypé",
+      "Approche structurée : problem framing → design → prototype → itération",
+      "Meilleure clarté sur le positionnement PM pour chaque candidature",
+      "Démonstration de la boucle problem → solution en autonomie",
+      "Technical fluency appliquée : cadrage, IA, prototypage end-to-end",
     ],
     realProject: {
-      label: "PROJET RÉEL LIVRÉ",
+      label: "CASE STUDY PRODUIT PERSONNEL",
       points: [
-        "Client réel",
-        "Site en production",
-        "Mise en ligne complète",
-        "Référencement local",
-        "Acquisition d'avis clients",
-        "Génération de visibilité digitale",
+        "Besoin réel identifié",
+        "Outil conçu & prototypé",
+        "IA appliquée",
+        "Itérations actives",
+        "Autonomie produit complète",
+        "Boucle problem → solution",
       ],
     },
-    skills: ["Compréhension du besoin", "Stratégie d'acquisition", "SEO local", "Google Business Profile", "Conversion", "ROI"],
-    color: "oklch(0.55 0.13 160)",
-    images: [
-      { src: "/projects/seo-website.jpg", alt: "TVB Jardins — Site web" },
-      { src: "/projects/seo-google.png", alt: "TVB Jardins — Google Business Profile 5 étoiles" },
-    ],
-    link: "https://tvb-jardins-sap-28.fr/",
-    linkLabel: "Voir le site",
+    skills: ["Problem framing", "IA appliquée", "Product thinking", "Score de compatibilité", "Delivery autonome", "User-centricity"],
+    color: "oklch(0.55 0.2 260)",
+    images: [] as ProjectImage[],
   },
   {
     number: "02",
@@ -111,42 +106,49 @@ const caseStudies = [
     link: "https://www.baume.app/",
     linkLabel: "Voir Baume",
   },
+  {
+    number: "04",
+    tag: "Transformation digitale · Acquisition locale",
+    title: "TVB Jardins — Transformer un besoin terrain en levier d'acquisition local",
+    subtitle: "Compréhension du besoin · Stratégie locale · Confiance · ROI",
+    description:
+      "Diagnostic business et stratégie d'acquisition locale pour une TPE : analyse du manque à gagner lié à l'absence de visibilité digitale, création d'un site WordPress de zéro, fiche Google Business Profile, stratégie SEO/conversion à ROI rapide. Résultat : top 10 Google et 25 avis récoltés en 1 mois.",
+    problem:
+      "Un artisan reconnu localement pour la qualité de son travail, mais absent du digital. Aucune présence en ligne, aucune visibilité locale structurée, un bouche-à-oreille insuffisant pour soutenir la croissance. Comment construire une présence crédible, génératrice de confiance et d'acquisition, avec un budget maîtrisé ?",
+    approach:
+      "Écoute du besoin, compréhension du contexte métier et des attentes clients, audit de la concurrence locale, définition d'une stratégie d'acquisition adaptée. Mise en place des bons leviers dans le bon ordre : visibilité, preuve sociale, confiance, conversion.",
+    solution:
+      "Présence digitale locale opérationnelle : site structuré autour des intentions de recherche clients, Google Business Profile actif avec activation des avis comme levier de réassurance, parcours de contact simplifié. Chaque décision orientée ROI et impact mesurable.",
+    results: [
+      "TOP 10 résultats Google recherche un mois après la mise en ligne",
+      "25 avis Google obtenus durant le premier mois suivant la mise en ligne",
+      "Visibilité locale construite de zéro, budget maîtrisé",
+      "Acquisition digitale opérationnelle et autonome",
+      "Site en production, référencement local actif",
+    ],
+    realProject: {
+      label: "PROJET RÉEL LIVRÉ",
+      points: [
+        "Client réel",
+        "Site en production",
+        "Mise en ligne complète",
+        "Référencement local",
+        "Acquisition d'avis clients",
+        "Génération de visibilité digitale",
+      ],
+    },
+    skills: ["Compréhension du besoin", "Stratégie d'acquisition", "SEO local", "Google Business Profile", "Conversion", "ROI"],
+    color: "oklch(0.55 0.13 160)",
+    images: [
+      { src: "/projects/seo-website.jpg", alt: "TVB Jardins — Site web" },
+      { src: "/projects/seo-google.png", alt: "TVB Jardins — Google Business Profile 5 étoiles" },
+    ],
+    link: "https://tvb-jardins-sap-28.fr/",
+    linkLabel: "Voir le site",
+  },
 ]
 
-const technicalProjects = [
-  {
-    number: "T1",
-    tag: "Marketplace",
-    title: "Vinted Replique Marketplace",
-    subtitle: "React · Node.js · Stripe · JWT",
-    description:
-      "Marketplace complète : inscription/connexion sécurisée JWT, publication d'annonces, gestion des médias Cloudinary et paiement Stripe intégré.",
-    skills: ["React", "Node.js", "Stripe", "JWT", "Cloudinary", "Express"],
-    color: "var(--gold)",
-  },
-  {
-    number: "T2",
-    tag: "Interface React",
-    title: "Deliveroo Replique WebSite",
-    subtitle: "React · API REST · State Management",
-    description:
-      "Consommation d'API REST et panier dynamique en React avec state management, affichage des menus et calcul du total en temps réel.",
-    skills: ["React", "API REST", "State Management", "Hooks"],
-    color: "oklch(0.65 0.12 150)",
-  },
-  {
-    number: "T3",
-    tag: "Full Stack",
-    title: "Marvel Replique Website",
-    subtitle: "React · Node.js · Netlify · Northflank",
-    description:
-      "Application full stack déployée en production : liste de personnages et comics via l'API Marvel, système de favoris persistants, gestion médias Cloudinary.",
-    skills: ["React", "Node.js", "Cloudinary", "Netlify", "Northflank"],
-    color: "oklch(0.6 0.15 30)",
-  },
-]
-
-// ─── Lightbox ──────────────────────────────────���─────────────────────────────
+// ─── Lightbox ─────────────────────────────────────────────────────────────────
 
 function Lightbox({
   images,
@@ -274,7 +276,6 @@ function ImageCarousel({
 
   return (
     <div className="relative mb-5 rounded-lg overflow-hidden border border-border bg-secondary group">
-      {/* Main image — click opens lightbox */}
       <button
         className="relative block w-full h-52 cursor-zoom-in focus:outline-none"
         onClick={() => onImageClick(current)}
@@ -291,7 +292,6 @@ function ImageCarousel({
         </span>
       </button>
 
-      {/* Prev / Next */}
       {images.length > 1 && (
         <>
           <button
@@ -311,7 +311,6 @@ function ImageCarousel({
         </>
       )}
 
-      {/* Dot indicators */}
       {images.length > 1 && (
         <div className="absolute bottom-2.5 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-10">
           {images.map((_, i) => (
@@ -330,7 +329,6 @@ function ImageCarousel({
         </div>
       )}
 
-      {/* Thumbnail strip */}
       {images.length > 1 && (
         <div className="flex gap-1.5 p-2 bg-background/80 backdrop-blur-sm overflow-x-auto">
           {images.map((img, i) => (
@@ -350,7 +348,7 @@ function ImageCarousel({
   )
 }
 
-// ─── Case Study Card ─────────────────���────────────────────────────────��───────
+// ─── Case Study Card ──────────────────────────────────────────────────────────
 
 function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
   const [expanded, setExpanded] = useState(false)
@@ -398,7 +396,7 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
             {project.description}
           </p>
 
-          {/* Real Project Badge - TVB Jardins */}
+          {/* Real Project Badge */}
           {"realProject" in project && project.realProject && (
             <div
               className="rounded-lg p-4 mb-5 border"
@@ -422,7 +420,7 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
             </div>
           )}
 
-          {/* Carousel — all images scroll + click to open lightbox */}
+          {/* Carousel */}
           {images.length > 0 && (
             <ImageCarousel
               images={images}
@@ -531,50 +529,6 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
   )
 }
 
-// ─── Technical Project Card ───────────────────────────────────────────��───────
-
-function TechCard({ project }: { project: (typeof technicalProjects)[0] }) {
-  return (
-    <div className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-300">
-      <div className="h-0.5 w-full opacity-60" style={{ background: project.color }} />
-      <div className="p-6">
-        <div className="flex items-start justify-between gap-3 mb-3">
-          <div>
-            <p
-              className="text-[10px] font-semibold tracking-widest uppercase mb-1"
-              style={{ color: project.color }}
-            >
-              {project.tag} · {project.subtitle}
-            </p>
-            <h3 className="font-serif text-base font-bold text-foreground leading-snug">
-              {project.title}
-            </h3>
-          </div>
-          <span
-            className="shrink-0 font-serif text-2xl font-bold opacity-10 select-none"
-            style={{ color: project.color }}
-          >
-            {project.number}
-          </span>
-        </div>
-        <p className="text-xs text-muted-foreground leading-relaxed mb-4">
-          {project.description}
-        </p>
-        <div className="flex flex-wrap gap-1.5">
-          {project.skills.map((s) => (
-            <span
-              key={s}
-              className="px-2 py-0.5 rounded text-xs text-muted-foreground bg-secondary border border-border"
-            >
-              {s}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-  )
-}
-
 // ─── Section ──────────────────────────────────────────────────────────────────
 
 export default function Projects() {
@@ -582,7 +536,7 @@ export default function Projects() {
     <section id="projects" className="py-16 px-6 section-divider">
       <div className="max-w-6xl mx-auto">
 
-        {/* ─── Category 1: Case Studies ── */}
+        {/* ─── Case Studies ── */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -611,9 +565,9 @@ export default function Projects() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-muted-foreground max-w-xl mb-12 leading-relaxed text-sm"
         >
-          Product Management, Product Owner et performance digitale : chaque case study illustre ma
-          capacité à structurer un problème, piloter une démarche produit et livrer une solution à
-          impact mesurable.
+          Product Management, IA appliquée et performance business : chaque case study illustre
+          ma capacité à identifier un problème réel, structurer une démarche produit rigoureuse
+          et livrer une solution à impact mesurable.
         </motion.p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-20">
@@ -630,39 +584,46 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* ── Category 2: Technical projects ── */}
+        {/* ─── Technical Product Fluency ── */}
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="border-t border-border pt-16"
+          transition={{ duration: 0.6 }}
+          className="border-t border-border pt-12"
         >
-          <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-3">
-            Complément technique
-          </p>
-          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-foreground leading-tight mb-3 text-balance">
-            Projets techniques —{" "}
-            <span className="italic text-muted-foreground font-normal">compréhension du delivery</span>
-          </h3>
-          <p className="text-muted-foreground max-w-xl mb-10 leading-relaxed text-sm">
-            Ces projets web et mobile renforcent ma capacité à dialoguer avec les équipes
-            techniques, comprendre les contraintes de delivery et cadrer des solutions réalistes.
-          </p>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {technicalProjects.map((project, index) => (
-              <motion.div
-                key={project.number}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
+          <div className="bg-card border border-border rounded-xl p-6 max-w-2xl hover:border-primary/40 transition-colors duration-300">
+            <div className="flex items-start gap-4 mb-4">
+              <div
+                className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
+                style={{ background: "var(--teal-dim)" }}
               >
-                <TechCard project={project} />
-              </motion.div>
-            ))}
+                <Code2 size={18} style={{ color: "var(--teal)" }} />
+              </div>
+              <div>
+                <p
+                  className="text-xs font-semibold tracking-widest uppercase mb-1.5"
+                  style={{ color: "var(--teal)" }}
+                >
+                  Technical Product Fluency
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Compréhension des stacks front/back, API, base de données et déploiement
+                  pour mieux cadrer les besoins, dialoguer avec les développeurs et suivre la delivery.
+                  Projets de formation disponibles sur demande.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-2 pl-14">
+              {["React.js", "Node.js", "Express.js", "MongoDB", "React Native", "API REST", "GitHub", "Expo"].map((s) => (
+                <span
+                  key={s}
+                  className="px-2.5 py-1 rounded text-xs text-muted-foreground bg-secondary border border-border"
+                >
+                  {s}
+                </span>
+              ))}
+            </div>
           </div>
         </motion.div>
 

@@ -1,6 +1,6 @@
 "use client"
 
-import { Briefcase, Compass, Code2, GitMerge, TrendingUp, MessageSquare } from "lucide-react"
+import { Briefcase, Compass, Code2, Users, TrendingUp, MessageSquare } from "lucide-react"
 import { motion } from "framer-motion"
 
 const cards = [
@@ -23,10 +23,10 @@ const cards = [
     text: "Identifier les irritants, analyser les causes profondes, structurer les priorités et construire des solutions adaptées au contexte humain, opérationnel et business. Chaque problème possède plusieurs solutions. Mon rôle consiste à comprendre ce qui bloque et à construire le chemin le plus pertinent pour avancer.",
   },
   {
-    icon: GitMerge,
+    icon: Users,
     number: "04",
-    title: "Leadership & exécution",
-    text: "Transformer les idées en actions concrètes grâce à une coordination efficace des équipes, une gestion claire des priorités et une forte capacité d'exécution.",
+    title: "Centricity utilisateurs & Product Discovery",
+    text: "Partir des utilisateurs, de leurs besoins réels et de leurs contraintes avant de proposer une solution. Structurer une démarche de discovery rigoureuse : distinguer symptômes et causes profondes, valider les hypothèses, interroger les bonnes personnes. Ce que j'ai appris sur le terrain : les meilleures solutions émergent d'une vraie compréhension du problème.",
   },
   {
     icon: TrendingUp,

@@ -7,8 +7,6 @@ import {
   Bot,
   BarChart2,
   Globe,
-  Code2,
-  Rocket,
   Workflow,
 } from "lucide-react"
 
@@ -291,7 +289,7 @@ const categories = [
   },
   {
     id: "ai",
-    label: "IA & Vibe Coding",
+    label: "IA générative & Assistants",
     icon: Bot,
     color: "oklch(0.58 0.14 300)",
     tools: [
@@ -303,7 +301,7 @@ const categories = [
       { name: "Lovable", desc: "Création rapide d'applications, MVP et interfaces" },
       { name: "Dust", desc: "Assistants IA, workflows internes, recherche et automatisation métier" },
       { name: "Perplexity", desc: "Recherche augmentée, veille, analyse rapide" },
-      { name: "Cursor", desc: "Vibe coding, prototypage, assistance au développement" },
+      { name: "Cursor", desc: "Prototypage rapide, assistance au développement et cadrage technique" },
     ],
   },
   {
@@ -341,39 +339,6 @@ const categories = [
       { name: "WordPress", desc: "Création de sites, contenus, SEO local" },
       { name: "Google Business Profile", desc: "Présence locale, avis clients, visibilité Google" },
       { name: "SEO local", desc: "Optimisation de visibilité et acquisition locale" },
-    ],
-  },
-  {
-    id: "dev",
-    label: "Développement Web & Mobile",
-    icon: Code2,
-    color: "oklch(0.6 0.15 30)",
-    tools: [
-      { name: "React.js", desc: "Développement front-end" },
-      { name: "JSX", desc: "Composants React" },
-      { name: "HTML5", desc: "Structure web" },
-      { name: "CSS3", desc: "Styles et responsive design" },
-      { name: "Node.js", desc: "Développement back-end JavaScript" },
-      { name: "Express.js", desc: "Création de serveurs et API" },
-      { name: "API REST", desc: "Architecture et communication front/back" },
-      { name: "MongoDB", desc: "Base de données NoSQL" },
-      { name: "MongoDB Compass", desc: "Gestion et visualisation de base de données" },
-      { name: "MongoDB Atlas", desc: "Hébergement cloud MongoDB" },
-      { name: "React Native", desc: "Développement mobile" },
-      { name: "Expo", desc: "Prototypage et déploiement mobile" },
-    ],
-  },
-  {
-    id: "deploy",
-    label: "Déploiement, paiement & assets",
-    icon: Rocket,
-    color: "oklch(0.65 0.12 150)",
-    tools: [
-      { name: "GitHub", desc: "Versioning, repositories, collaboration code" },
-      { name: "Netlify", desc: "Déploiement front-end" },
-      { name: "Northflank", desc: "Hébergement back-end" },
-      { name: "Stripe", desc: "Paiement en ligne" },
-      { name: "Cloudinary", desc: "Gestion et optimisation des médias" },
     ],
   },
 ]
@@ -549,6 +514,22 @@ export default function Skills() {
               </motion.div>
             )
           })}
+        </motion.div>
+
+        {/* Technical fluency note */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-8 px-5 py-4 rounded-lg border text-sm leading-relaxed text-muted-foreground"
+          style={{
+            borderColor: "color-mix(in oklch, var(--teal) 20%, transparent)",
+            background: "color-mix(in oklch, var(--teal) 4%, var(--background))",
+          }}
+        >
+          <span className="font-medium text-foreground">Technical fluency :</span>{" "}
+          compréhension des stacks front/back, API, base de données et déploiement pour mieux cadrer les besoins, dialoguer avec les développeurs et suivre la delivery.
         </motion.div>
 
         {/* All tools compact strip */}

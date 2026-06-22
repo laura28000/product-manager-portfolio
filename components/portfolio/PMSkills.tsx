@@ -81,7 +81,7 @@ export default function PMSkills() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4 text-balance"
           >
-            PM Skills
+            Méthodes & compétences Product
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -139,6 +139,21 @@ export default function PMSkills() {
               </div>
             </motion.div>
           ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="rounded-xl px-8 py-6 mt-12 max-w-3xl mx-auto text-center"
+          style={{ background: "var(--teal-dim)", border: "1px solid color-mix(in srgb, var(--teal) 20%, transparent)" }}
+        >
+          <p className="font-serif text-xl sm:text-2xl font-bold text-foreground leading-snug mb-4 text-balance">
+            &ldquo;Le meilleur Product Manager n&apos;est pas celui qui a le plus d&apos;idées,
+            c&apos;est celui qui sait lesquelles construire, dans quel ordre, et pourquoi.&rdquo;
+          </p>
+          <cite className="text-sm text-muted-foreground not-italic">— Ma conviction de PM</cite>
         </motion.div>
       </div>
     </section>

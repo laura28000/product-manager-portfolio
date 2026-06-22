@@ -62,7 +62,7 @@ export default function Hero() {
               className="text-xl font-semibold mb-1"
               style={{ color: "var(--teal)" }}
             >
-              Product Manager · Product Ops | Transformation Digitale, Leadership & IA
+              Product Manager hybride | Terrain · Business · IA · Delivery
             </motion.p>
 
             {/* Sub-badge */}
