@@ -5,11 +5,11 @@ import { motion } from "framer-motion"
 const formations = [
   {
     period: "nov. 2025 – mars 2026",
-    title: "Product Manager",
-    school: "Join Maestro",
-    badge: "RS6808 — Concevoir et mettre en œuvre une stratégie d'activation digitale",
+    title: "Product Management",
+    school: "École Maestro Paris",
+    badge: "RS6808 : Concevoir et mettre en œuvre une stratégie d'activation digitale",
     description:
-      "Formation basée à 80 % sur la pratique avec des cas produits concrets issus d'entreprises comme BlaBlaCar, Doctolib, Netflix, Spotify, Nickel et d'autres. Intervenants issus du terrain. Apprentissage orienté résolution de problèmes. Projet de certification : problématique réelle proposée par Welcome to the Jungle.",
+      "Formation orientée pratique, animée par des intervenants issus du terrain et structurée autour de cas produits concrets d'entreprises comme BlaBlaCar, Doctolib, Netflix, Spotify, Nickel et d'autres. L'apprentissage est centré sur la résolution de problèmes, la prise de décision produit et l'application directe des méthodes PM. Projet de certification : problématique réelle proposée par Welcome to the Jungle.",
     skills: [
       "Product Discovery",
       "Analyse utilisateur",
@@ -23,9 +23,9 @@ const formations = [
   },
   {
     period: "juil. 2025 – sept. 2025",
-    title: "Technical Fluency — Développement Web & Mobile",
-    school: "Le Reacteur — RNCP37674 (Bac+3/4)",
-    badge: "Technical Fluency",
+    title: "Développement Web & Mobile Full Stack",
+    school: "Le Reacteur Paris, RNCP37674 (Bac+3/4)",
+    badge: "",
     description:
       "Formation pratique sur l'écosystème JavaScript, abordée avec une posture de Product Owner : cadrage du scope, définition des parcours utilisateurs et coordination des choix techniques. Projet final : MVP de l'application mobile Baume, rôle de Product Owner de la conception au delivery. Cette expérience renforce ma capacité à dialoguer avec les équipes techniques, comprendre les contraintes de développement et cadrer des solutions réalistes.",
     skills: [
@@ -50,7 +50,7 @@ const experiences = [
   {
     period: "juil. 2022 – juil. 2025",
     title: "Associée des opérations | Superviseur de Production",
-    company: "Aptiv — Épernon",
+    company: "Aptiv, Épernon",
     description:
       "Management d'équipes internes et intérimaires dans un environnement industriel automobile exigeant, avec des enjeux forts de qualité, performance, sécurité et continuité opérationnelle.",
     project: {
@@ -110,12 +110,14 @@ function FormationCard({ f, index }: { f: (typeof formations)[0]; index: number 
           <h3 className="text-base font-semibold text-foreground">{f.title}</h3>
           <p className="text-sm font-medium" style={{ color: "var(--teal)" }}>{f.school}</p>
         </div>
-        <span
-          className="text-[10px] font-semibold uppercase tracking-widest px-2 py-1 rounded shrink-0"
-          style={{ color: "var(--teal)", background: "var(--teal-dim)" }}
-        >
-          {f.badge}
-        </span>
+        {f.badge && (
+          <span
+            className="text-[10px] font-semibold uppercase tracking-widest px-2 py-1 rounded shrink-0"
+            style={{ color: "var(--teal)", background: "var(--teal-dim)" }}
+          >
+            {f.badge}
+          </span>
+        )}
       </div>
       <p className="text-sm text-muted-foreground leading-relaxed mb-4">{f.description}</p>
       <div className="flex flex-wrap gap-2">
@@ -278,7 +280,7 @@ export default function Experience() {
             className="text-xs font-semibold tracking-widest uppercase mb-6"
             style={{ color: "var(--teal)" }}
           >
-            Certifications complémentaires — 2026
+            Certifications complémentaires · 2026
           </h3>
           <div className="flex flex-wrap gap-3">
             {certifications.map((c, index) => (
@@ -292,7 +294,7 @@ export default function Experience() {
                 className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card border border-border"
               >
                 <span className="text-sm font-medium text-foreground">{c.name}</span>
-                <span className="text-xs text-muted-foreground">— {c.badge}</span>
+                <span className="text-xs text-muted-foreground">· {c.badge}</span>
               </motion.div>
             ))}
           </div>

@@ -1,6 +1,7 @@
 "use client"
 
-import { Mail, Linkedin, Phone, ExternalLink } from "lucide-react"
+import { useState } from "react"
+import { Mail, Linkedin, Phone, ExternalLink, Check } from "lucide-react"
 import { motion } from "framer-motion"
 
 const links = [
@@ -16,7 +17,7 @@ const links = [
     label: "Email",
     value: "lauraca28300@gmail.com",
     href: "mailto:lauraca28300@gmail.com",
-    cta: "M'envoyer un email",
+    cta: "Copier l'adresse",
   },
   {
     icon: Linkedin,
@@ -28,6 +29,15 @@ const links = [
 ]
 
 export default function Contact() {
+  const [emailCopied, setEmailCopied] = useState(false)
+
+  const handleEmailClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    navigator.clipboard.writeText("lauraca28300@gmail.com")
+    setEmailCopied(true)
+    setTimeout(() => setEmailCopied(false), 2000)
+  }
+
   return (
     <section id="contact" className="py-16 px-6 section-divider">
       <div className="max-w-6xl mx-auto">
@@ -50,7 +60,7 @@ export default function Contact() {
           >
             Échangeons autour de vos enjeux{" "}
             <span className="italic" style={{ color: "var(--teal)" }}>
-              produit, humains et opérationnels
+              Produit, IA et impact business
             </span>
           </motion.h2>
           <motion.p
@@ -60,11 +70,10 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-muted-foreground leading-relaxed"
           >
-            Product Building, transformation digitale, structuration produit ou exploitation de l&apos;IA : j&apos;aime comprendre les vrais problèmes, construire les bonnes solutions et les faire adopter par le terrain.
+            Product Building, transformation digitale, structuration produit ou IA appliquée : j&apos;aime partir des vrais problèmes, cadrer les bons leviers et construire des solutions utiles, mesurables et adoptées.
           </motion.p>
         </div>
 
-        {/* Contact cards */}
         <div className="grid sm:grid-cols-3 gap-6 mb-8 max-w-3xl mx-auto">
           {links.map((link, index) => (
             <motion.a
@@ -72,13 +81,14 @@ export default function Contact() {
               href={link.href}
               target={link.label === "LinkedIn" ? "_blank" : undefined}
               rel={link.label === "LinkedIn" ? "noopener noreferrer" : undefined}
+              onClick={link.label === "Email" ? handleEmailClick : undefined}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="group bg-card border border-border rounded-xl p-8 flex flex-col gap-4 hover:border-primary/50 transition-colors duration-300"
+              className="group bg-card border border-border rounded-xl p-8 flex flex-col gap-4 hover:border-primary/50 transition-colors duration-300 cursor-pointer"
             >
               <div
                 className="w-10 h-10 rounded-lg flex items-center justify-center"
@@ -93,10 +103,14 @@ export default function Contact() {
                 <p className="text-sm text-foreground font-medium">{link.value}</p>
               </div>
               <div
-                className="inline-flex items-center gap-1.5 text-xs font-medium mt-auto"
+                className="inline-flex items-center gap-1.5 text-xs font-medium mt-auto transition-all duration-200"
                 style={{ color: "var(--teal)" }}
               >
-                {link.cta} <ExternalLink size={12} />
+                {link.label === "Email" && emailCopied ? (
+                  <><Check size={12} /> Copié !</>
+                ) : (
+                  <>{link.cta} <ExternalLink size={12} /></>
+                )}
               </div>
             </motion.a>
           ))}

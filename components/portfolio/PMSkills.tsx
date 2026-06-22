@@ -8,35 +8,35 @@ const skillGroups = [
     icon: Search,
     title: "Discovery & Research",
     description:
-      "Mener des recherches utilisateurs et des ateliers de discovery pour identifier les besoins et opportunités produits.",
+      "Mener une discovery rigoureuse : interviews terrain, analyse SQL, benchmark concurrentiel. Assistée par l'IA pour la synthèse et la formalisation des besoins, avant de construire quoi que ce soit.",
     skills: ["Product Discovery", "User Research"],
   },
   {
     icon: Target,
     title: "Stratégie & Priorisation",
     description:
-      "Utiliser RICE, OKR, Story Mapping et Roadmaps pour prioriser les initiatives et structurer le backlog.",
+      "Arbitrer avec méthode : RICE, OKR, Story Mapping. Chaque décision de roadmap justifiée par la donnée, la compréhension utilisateur et l'impact business attendu.",
     skills: ["RICE", "OKR", "Roadmap", "Story Mapping", "Backlog & User Stories"],
   },
   {
     icon: BarChart3,
     title: "Mesure & ROI",
     description:
-      "Suivi des KPIs et calcul du ROI pour s'assurer que chaque initiative génère une valeur tangible.",
+      "Définir les KPIs avant de lancer, mesurer l'impact réel et ajuster. Une culture data construite sur le terrain : pas d'initiative sans indicateur, pas d'indicateur sans décision.",
     skills: ["KPIs", "ROI", "Funnel d'Acquisition"],
   },
   {
     icon: Cog,
     title: "Exécution & Organisation",
     description:
-      "Gestion de projets Agile/Scrum, Product Ops et amélioration continue pour transformer les idées en actions concrètes.",
+      "Conduire des projets du cadrage au delivery en mode Agile, avec une capacité à arbitrer sous contrainte, aligner les équipes transverses et garder le cap sur la valeur livrée.",
     skills: ["Agile/Scrum", "Product Ops", "Gestion du Changement", "Amélioration Continue"],
   },
   {
     icon: Rocket,
     title: "Go-to-Market & Growth",
     description:
-      "Définition de stratégies de lancement, growth et alignement des stakeholders pour accélérer l'adoption et la performance.",
+      "Structurer le lancement, aligner les parties prenantes et piloter l'adoption. Mon background terrain m'a appris qu'un produit ne vit que s'il est adopté, par le terrain et par les utilisateurs.",
     skills: ["Go-to-Market", "Growth", "Stakeholder Management"],
   },
 ]

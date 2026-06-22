@@ -12,9 +12,37 @@ type ProjectImage = { src: string; alt: string }
 const caseStudies = [
   {
     number: "01",
-    tag: "Product IA · Candidatures · Positionnement PM",
-    title: "ProductSignal — Analyser les offres PM, scorer la compatibilité et affiner son positionnement",
-    subtitle: "Problem framing · IA appliquée · Score automatisé · Delivery",
+    tag: "Résolution de problème business · Product Management",
+    title: "Welcome to the Jungle : Résoudre un problème de conversion des candidats seniors",
+    subtitle: "Compréhension du problème · Recherche · Analyse · Priorisation · KPIs",
+    description:
+      "Résolution d'un problème business réel : comprendre pourquoi les candidats seniors ne convertissent pas, identifier les bons leviers, prioriser les opportunités et structurer un plan d'action orienté impact.",
+    problem:
+      "Les recruteurs recherchent des profils expérimentés, mais l'audience du jobboard reste majoritairement orientée profils juniors. Écart de conversion significatif identifié entre les deux segments : enjeu business direct sur la valeur perçue de la plateforme.",
+    approach:
+      "Immersion dans le problème : analyse SQL des données de conversion, 5 interviews utilisateurs, benchmark concurrentiel. Identification des freins réels (filtres incomplets, faible visibilité full remote, manque de personnalisation). Priorisation RICE pour arbitrer les opportunités à fort impact et aligner les décisions sur des données tangibles.",
+    solution:
+      "Roadmap structurée autour des leviers à plus fort ROI, story maps candidat & recruteur, backlog priorisé et KPIs définis par phase. Chaque décision justifiée par la compréhension du problème, l'analyse des données et l'impact business attendu.",
+    results: [
+      "18/20, Certification Product Management",
+      "Problème business compris, causes profondes identifiées",
+      "Leviers de conversion priorisés sur la base des données",
+      "Roadmap, KPIs et go-to-market structurés et actionnables",
+    ],
+    skills: ["Compréhension du problème", "User Research", "Analyse SQL", "Priorisation RICE", "Roadmap", "KPIs", "Prise de décision"],
+    color: "var(--teal)",
+    images: [
+      { src: "/projects/wttj-title.png", alt: "Welcome to the Jungle — Projet Join Maestro" },
+      { src: "/projects/wttj-roadmap.png", alt: "Roadmap NOW / NEXT / LATER" },
+      { src: "/projects/wttj-prioritization.png", alt: "Priorisation Valeur / Complexité" },
+    ],
+    confidential: true,
+  },
+  {
+    number: "02",
+    tag: "Projet portfolio · Product IA · Candidatures · Positionnement PM",
+    title: "ProductSignal : Analyser les offres PM, scorer la compatibilité et affiner son positionnement",
+    subtitle: "Problem framing · IA appliquée · Score automatisé · Itération",
     description:
       "Conception d'un outil IA personnel en cours de développement : analyse d'offres Product Manager, score de compatibilité, identification des gaps et aide au positionnement pour chaque candidature. Projet portfolio, en cours d'itération.",
     problem:
@@ -46,37 +74,9 @@ const caseStudies = [
     images: [] as ProjectImage[],
   },
   {
-    number: "02",
-    tag: "Résolution de problème business · Product Management",
-    title: "Welcome to the Jungle — Résoudre un problème de conversion des candidats seniors",
-    subtitle: "Compréhension du problème · Recherche · Analyse · Priorisation · KPIs",
-    description:
-      "Résolution d'un problème business réel : comprendre pourquoi les candidats seniors ne convertissent pas, identifier les bons leviers, prioriser les opportunités et structurer un plan d'action orienté impact.",
-    problem:
-      "Les recruteurs recherchent des profils expérimentés, mais l'audience du jobboard reste majoritairement orientée profils juniors. Écart de conversion significatif identifié entre les deux segments : enjeu business direct sur la valeur perçue de la plateforme.",
-    approach:
-      "Immersion dans le problème : analyse SQL des données de conversion, 5 interviews utilisateurs, benchmark concurrentiel. Identification des freins réels (filtres incomplets, faible visibilité full remote, manque de personnalisation). Priorisation RICE pour arbitrer les opportunités à fort impact et aligner les décisions sur des données tangibles.",
-    solution:
-      "Roadmap structurée autour des leviers à plus fort ROI, story maps candidat & recruteur, backlog priorisé et KPIs définis par phase. Chaque décision justifiée par la compréhension du problème, l'analyse des données et l'impact business attendu.",
-    results: [
-      "18/20 — Certification Product Management",
-      "Problème business compris, causes profondes identifiées",
-      "Leviers de conversion priorisés sur la base des données",
-      "Roadmap, KPIs et go-to-market structurés et actionnables",
-    ],
-    skills: ["Compréhension du problème", "User Research", "Analyse SQL", "Priorisation RICE", "Roadmap", "KPIs", "Prise de décision"],
-    color: "var(--teal)",
-    images: [
-      { src: "/projects/wttj-title.png", alt: "Welcome to the Jungle — Projet Join Maestro" },
-      { src: "/projects/wttj-roadmap.png", alt: "Roadmap NOW / NEXT / LATER" },
-      { src: "/projects/wttj-prioritization.png", alt: "Priorisation Valeur / Complexité" },
-    ],
-    confidential: true,
-  },
-  {
     number: "03",
     tag: "Conception produit · Besoins utilisateurs sensibles",
-    title: "Baume — Concevoir un espace communautaire sécurisé autour d'un besoin utilisateur sensible",
+    title: "Baume : Concevoir un espace communautaire sécurisé autour d'un besoin utilisateur sensible",
     subtitle: "Empathie · Cadrage · Coordination produit/tech · Delivery",
     description:
       "Conception et livraison en 2 semaines d'un espace communautaire autour d'un besoin utilisateur sensible : accompagner les femmes en rupture sentimentale dans un environnement rassurant, sécurisé et bienveillant.",
@@ -109,7 +109,7 @@ const caseStudies = [
   {
     number: "04",
     tag: "Transformation digitale · Acquisition locale",
-    title: "TVB Jardins — Transformer un besoin terrain en levier d'acquisition local",
+    title: "TVB Jardins : Transformer un besoin terrain en levier d'acquisition local",
     subtitle: "Compréhension du besoin · Stratégie locale · Confiance · ROI",
     description:
       "Diagnostic business et stratégie d'acquisition locale pour une TPE : analyse du manque à gagner lié à l'absence de visibilité digitale, création d'un site WordPress de zéro, fiche Google Business Profile, stratégie SEO/conversion à ROI rapide. Résultat : top 10 Google et 25 avis récoltés en 1 mois.",
@@ -370,7 +370,6 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
         <div className="h-0.5 w-full" style={{ background: project.color }} />
 
         <div className="p-7">
-          {/* Header */}
           <div className="flex items-start justify-between gap-4 mb-4">
             <div className="flex-1">
               <p
@@ -391,12 +390,10 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
             </span>
           </div>
 
-          {/* Description */}
           <p className="text-sm text-muted-foreground leading-relaxed mb-5">
             {project.description}
           </p>
 
-          {/* Real Project Badge */}
           {"realProject" in project && project.realProject && (
             <div
               className="rounded-lg p-4 mb-5 border"
@@ -420,7 +417,6 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
             </div>
           )}
 
-          {/* Carousel */}
           {images.length > 0 && (
             <ImageCarousel
               images={images}
@@ -429,7 +425,6 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
             />
           )}
 
-          {/* Confidentiality badge */}
           {"confidential" in project && project.confidential && (
             <div className="mb-5 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary border border-border text-[10px] text-muted-foreground font-medium tracking-wide">
               <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50" />
@@ -437,7 +432,6 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
             </div>
           )}
 
-          {/* Problem */}
           <div
             className="rounded-lg p-4 mb-5 border-l-2"
             style={{ background: `${project.color}10`, borderColor: project.color }}
@@ -451,7 +445,6 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
             <p className="text-sm text-foreground leading-relaxed">{project.problem}</p>
           </div>
 
-          {/* Expandable detail */}
           {expanded && (
             <div className="space-y-5 mb-5">
               <div>
@@ -485,7 +478,6 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
             </div>
           )}
 
-          {/* Footer */}
           <div className="space-y-3 pt-4 border-t border-border">
             <div className="flex flex-wrap gap-1.5">
               {project.skills.map((s) => (
@@ -536,7 +528,6 @@ export default function Projects() {
     <section id="projects" className="py-16 px-6 section-divider">
       <div className="max-w-6xl mx-auto">
 
-        {/* ─── Case Studies ── */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -584,7 +575,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* ─── Technical Product Fluency ── */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

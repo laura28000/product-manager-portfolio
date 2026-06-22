@@ -285,7 +285,7 @@ const categories = [
       { name: "Figma", desc: "Wireframes, prototypes, parcours utilisateur" },
       { name: "Canva", desc: "Supports visuels, présentations, contenus marketing" },
       { name: "Confluence", desc: "Documentation collaborative, wiki produit, alignement équipe" },
-      { name: "Google Stitch", desc: "Intégration de données, pipelines ETL, reporting" },
+      { name: "Google Stitch", desc: "Idéation produit, génération d'interfaces et prototypage rapide" },
       { name: "Slack", desc: "Communication équipe, notifications, workflows collaboratifs" },
     ],
   },
@@ -302,7 +302,7 @@ const categories = [
       { name: "V0 Vercel", desc: "Prototypage rapide d'interfaces web" },
       { name: "Lovable", desc: "Création rapide d'applications, MVP et interfaces" },
       { name: "Dust", desc: "Assistants IA, workflows internes, recherche et automatisation métier" },
-      { name: "RAG", desc: "Retrieval-Augmented Generation — LLMs contextuels et recherche sémantique" },
+      { name: "RAG", desc: "Retrieval-Augmented Generation : LLMs contextuels et recherche sémantique" },
       { name: "Perplexity", desc: "Recherche augmentée, veille, analyse rapide" },
       { name: "Cursor", desc: "Prototypage rapide, assistance au développement et cadrage technique" },
     ],
@@ -535,28 +535,6 @@ export default function Skills() {
           compréhension des stacks front/back, API, base de données et déploiement pour mieux cadrer les besoins, dialoguer avec les développeurs et suivre la delivery.
         </motion.div>
 
-        {/* All tools compact strip */}
-        <div className="mt-12 pt-8 border-t border-border">
-          <p className="text-xs text-muted-foreground font-medium uppercase tracking-widest mb-4">
-            Tous les outils
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {categories.flatMap((cat) =>
-              cat.tools.map((tool) => {
-                const LogoComponent = ToolLogos[tool.name]
-                return (
-                  <span
-                    key={`${cat.id}-${tool.name}`}
-                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs text-muted-foreground border border-border bg-secondary hover:border-primary/40 hover:text-foreground transition-all duration-200 cursor-default"
-                  >
-                    {LogoComponent && <LogoComponent className="w-3.5 h-3.5" />}
-                    {tool.name}
-                  </span>
-                )
-              })
-            )}
-          </div>
-        </div>
       </div>
     </section>
   )

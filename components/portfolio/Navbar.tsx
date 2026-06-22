@@ -16,11 +16,26 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState("")
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
     window.addEventListener("scroll", onScroll)
     return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]")
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveSection(entry.target.id)
+        })
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    )
+    sections.forEach((s) => observer.observe(s))
+    return () => observer.disconnect()
   }, [])
 
   return (
@@ -44,22 +59,36 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8">
-          {navLinks.map((link, index) => (
-            <motion.li
-              key={link.href}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-            >
-              <motion.a
-                href={link.href}
-                whileHover={{ y: -2 }}
-                className="text-sm text-foreground font-medium hover:text-primary transition-colors duration-200 tracking-wide"
+          {navLinks.map((link, index) => {
+            const sectionId = link.href.replace("#", "")
+            const isActive = activeSection === sectionId
+            return (
+              <motion.li
+                key={link.href}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
               >
-                {link.label}
-              </motion.a>
-            </motion.li>
-          ))}
+                <motion.a
+                  href={link.href}
+                  whileHover={{ y: -2 }}
+                  className={`text-sm font-medium transition-colors duration-200 tracking-wide relative ${
+                    isActive ? "text-primary" : "text-foreground/70 hover:text-foreground"
+                  }`}
+                >
+                  {link.label}
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-indicator"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full"
+                      style={{ background: "var(--teal)" }}
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </motion.a>
+              </motion.li>
+            )
+          })}
         </ul>
 
         {/* CTA */}
@@ -102,19 +131,25 @@ export default function Navbar() {
             className="md:hidden backdrop-blur-md border-b border-border px-6 py-4 flex flex-col gap-4 overflow-hidden"
             style={{ background: "color-mix(in oklch, var(--teal) 15%, var(--background) 85%)" }}
           >
-            {navLinks.map((link, index) => (
-              <motion.a
-                key={link.href}
-                href={link.href}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                className="text-sm text-foreground font-medium hover:text-primary transition-colors"
-                onClick={() => setOpen(false)}
-              >
-                {link.label}
-              </motion.a>
-            ))}
+            {navLinks.map((link, index) => {
+              const sectionId = link.href.replace("#", "")
+              const isActive = activeSection === sectionId
+              return (
+                <motion.a
+                  key={link.href}
+                  href={link.href}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  className={`text-sm font-medium transition-colors ${
+                    isActive ? "text-primary" : "text-foreground hover:text-primary"
+                  }`}
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </motion.a>
+              )
+            })}
             <motion.button
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}

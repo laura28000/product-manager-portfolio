@@ -13,7 +13,7 @@ export default function Footer() {
     >
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <p>
-          &copy; {new Date().getFullYear()} Laura Caprara — Product Manager
+          &copy; {new Date().getFullYear()} Laura Caprara · Product Manager
         </p>
         <p>
           Conçu & développé avec{" "}

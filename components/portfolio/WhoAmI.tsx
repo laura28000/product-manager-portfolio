@@ -1,6 +1,6 @@
 "use client"
 
-import { Briefcase, Compass, Code2, Users, TrendingUp, MessageSquare } from "lucide-react"
+import { Briefcase, Code2, Users, TrendingUp } from "lucide-react"
 import { motion } from "framer-motion"
 
 const cards = [
@@ -11,34 +11,22 @@ const cards = [
     text: "+12 ans à piloter des équipes, coordonner des parties prenantes aux profils variés et faire avancer des sujets complexes dans des environnements exigeants.",
   },
   {
-    icon: MessageSquare,
-    number: "02",
-    title: "Communication & alignement",
-    text: "Créer des ponts entre les métiers, les équipes techniques et les décideurs afin d'aligner les objectifs, fluidifier la collaboration et accélérer l'exécution. Capacité à adapter ma communication aux interlocuteurs, créer de l'adhésion et fédérer autour d'un objectif commun, auprès d'opérateurs, d'ingénieurs, de responsables qualité, de fonctions support ou de directions.",
-  },
-  {
-    icon: Compass,
-    number: "03",
-    title: "Résolution de problèmes & amélioration continue",
-    text: "Identifier les irritants, analyser les causes profondes, structurer les priorités et construire des solutions adaptées au contexte humain, opérationnel et business. Chaque problème possède plusieurs solutions. Mon rôle consiste à comprendre ce qui bloque et à construire le chemin le plus pertinent pour avancer.",
-  },
-  {
     icon: Users,
-    number: "04",
-    title: "Centricity utilisateurs & Product Discovery",
-    text: "Partir des utilisateurs, de leurs besoins réels et de leurs contraintes avant de proposer une solution. Structurer une démarche de discovery rigoureuse : distinguer symptômes et causes profondes, valider les hypothèses, interroger les bonnes personnes. Ce que j'ai appris sur le terrain : les meilleures solutions émergent d'une vraie compréhension du problème.",
+    number: "02",
+    title: "Écoute & compréhension des utilisateurs",
+    text: "Partir des utilisateurs, de leurs besoins réels et de leurs contraintes avant de proposer une solution. Structurer une démarche de discovery rigoureuse : distinguer symptômes et causes profondes, valider les hypothèses, interroger les bonnes personnes.",
   },
   {
     icon: TrendingUp,
-    number: "05",
+    number: "03",
     title: "Culture KPI & impact business",
-    text: "Chaque initiative doit répondre à un besoin réel et générer un gain mesurable : adoption, performance, temps économisé, qualité ou impact business. J'accorde une attention particulière à l'impact business, à la création de valeur et au retour sur investissement avant d'introduire de nouveaux outils ou processus.",
+    text: "Chaque initiative doit répondre à un besoin réel et générer un gain mesurable : adoption, performance, temps économisé, qualité ou impact business. Pas d'initiative sans indicateur, pas d'indicateur sans décision.",
   },
   {
     icon: Code2,
-    number: "06",
+    number: "04",
     title: "Product Building & IA",
-    text: "J'utilise l'IA comme copilote de Product Building : Product Discovery assistée, prototypage accéléré, exploration de codebase avec Claude Code, diagnostic et correction de bugs, implémentation de fonctionnalités et génération de Pull Requests GitHub. Une collaboration technique concrète avec les équipes dev, sans être développeuse.",
+    text: "J'utilise l'IA comme copilote de Product Building : Product Discovery assistée, prototypage accéléré, exploration de codebase avec Claude Code, diagnostic et correction de bugs, implémentation de fonctionnalités et génération de Pull Requests GitHub.",
   },
 ]
 
@@ -53,8 +41,8 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
   },
@@ -86,24 +74,12 @@ export default function WhoAmI() {
           </span>
         </motion.h2>
 
-        {/* Sous-titre */}
-        <motion.h3
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg font-semibold text-foreground mb-6"
-        >
-          Ce que j&apos;apporte à votre organisation
-        </motion.h3>
-
-        {/* Texte d'introduction */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="max-w-3xl mb-16 space-y-4 text-muted-foreground leading-relaxed text-sm"
+          className="max-w-3xl mb-14 space-y-4 text-muted-foreground leading-relaxed text-sm"
         >
           <p>
             Une maturité opérationnelle forte, une culture produit structurée et une capacité à
@@ -112,20 +88,19 @@ export default function WhoAmI() {
           </p>
           <p>
             Ma valeur ajoutée réside dans ma compréhension des personnes, des organisations et des
-            systèmes — et dans ma capacité à mobiliser les bons leviers, humains et technologiques,
+            systèmes, et dans ma capacité à mobiliser les bons leviers, humains et technologiques,
             pour construire des solutions adoptées par le terrain.
           </p>
         </motion.div>
 
-        {/* Cards grid: 3 top + 3 bottom */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6"
+          className="grid sm:grid-cols-2 gap-6 mb-12"
         >
-          {cards.slice(0, 3).map((card) => (
+          {cards.map((card) => (
             <motion.div
               key={card.number}
               variants={cardVariants}
@@ -150,39 +125,6 @@ export default function WhoAmI() {
           ))}
         </motion.div>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
-        >
-          {cards.slice(3).map((card) => (
-            <motion.div
-              key={card.number}
-              variants={cardVariants}
-              whileHover={{ y: -5, transition: { duration: 0.2 } }}
-              className="bg-card border border-border rounded-xl p-7 hover:border-primary/40 transition-colors duration-300 relative overflow-hidden"
-            >
-              <span
-                className="absolute top-4 right-5 font-serif text-5xl font-bold opacity-5 select-none"
-                style={{ color: "var(--teal)" }}
-              >
-                {card.number}
-              </span>
-              <div
-                className="w-10 h-10 rounded-lg flex items-center justify-center mb-5"
-                style={{ background: "var(--teal-dim)" }}
-              >
-                <card.icon size={18} style={{ color: "var(--teal)" }} />
-              </div>
-              <h3 className="text-base font-semibold text-foreground mb-2">{card.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{card.text}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Bloc conviction */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

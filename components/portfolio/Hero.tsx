@@ -41,7 +41,7 @@ export default function Hero() {
                 className="w-1.5 h-1.5 rounded-full animate-pulse"
                 style={{ background: "var(--teal)" }}
               />
-              Disponible — ouverte aux opportunités
+              Disponible, ouverte aux opportunités
             </motion.div>
 
             {/* Name */}
@@ -90,7 +90,10 @@ export default function Hero() {
                 Chartres, France
               </span>
               <span className="text-xs text-muted-foreground bg-secondary border border-border px-2.5 py-1 rounded">
-                Mobilité hybride — Île-de-France & Centre-Val de Loire
+                Mobilité hybride : Île-de-France & Centre-Val de Loire
+              </span>
+              <span className="text-xs text-muted-foreground bg-secondary border border-border px-2.5 py-1 rounded">
+                Anglais : outils professionnels
               </span>
             </motion.div>
 
@@ -153,7 +156,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-md font-semibold text-sm transition-all duration-200"
             style={{ background: "var(--teal)", color: "white" }}
           >
-            Pourquoi moi ?
+            Découvrir mon profil
           </motion.a>
           <motion.a
             href="#contact"
@@ -163,7 +166,6 @@ export default function Hero() {
             style={{ background: "transparent", color: "var(--teal)", border: "1.5px solid var(--teal)" }}
           >
             <span>Me contacter pour échanger</span>
-            <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "var(--teal)" }} />
           </motion.a>
         </motion.div>
       </div>
