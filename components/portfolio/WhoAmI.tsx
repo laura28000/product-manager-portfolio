@@ -98,7 +98,7 @@ export default function WhoAmI() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid sm:grid-cols-2 gap-6 mb-12"
+          className="grid sm:grid-cols-2 gap-6 mb-6"
         >
           {cards.map((card) => (
             <motion.div
@@ -123,6 +123,38 @@ export default function WhoAmI() {
               <p className="text-sm text-muted-foreground leading-relaxed">{card.text}</p>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Ma vision de l'IA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="rounded-xl p-5 sm:p-6 mb-8 border"
+          style={{
+            background: "color-mix(in oklch, var(--teal) 5%, var(--background))",
+            borderColor: "color-mix(in srgb, var(--teal) 25%, transparent)",
+          }}
+        >
+          <p
+            className="text-[10px] font-semibold uppercase tracking-widest mb-3 flex items-center gap-2"
+            style={{ color: "var(--teal)" }}
+          >
+            <span className="w-2 h-2 rounded-full shrink-0" style={{ background: "var(--teal)" }} />
+            Ma vision de l&apos;IA
+          </p>
+          <div className="space-y-2 text-sm text-muted-foreground leading-relaxed">
+            <p>
+              L&apos;IA n&apos;est pas une case à cocher ni une solution à ajouter partout par effet de mode.
+              Avant de l&apos;intégrer, je questionne le besoin réel, le coût, l&apos;usage, l&apos;impact
+              attendu et la valeur créée.
+            </p>
+            <p>
+              L&apos;objectif n&apos;est pas de produire toujours plus de fonctionnalités, mais de construire
+              les bonnes solutions : utiles, adoptées, rentables et mesurables.
+            </p>
+          </div>
         </motion.div>
 
         <motion.div
