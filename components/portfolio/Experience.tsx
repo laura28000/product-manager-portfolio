@@ -104,15 +104,13 @@ function FormationCard({ f, index }: { f: (typeof formations)[0]; index: number 
       whileHover={{ y: -5 }}
       className="bg-card border border-border rounded-xl p-6 hover:border-primary/40 transition-colors duration-300"
     >
-      <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
-        <div>
-          <p className="text-xs text-muted-foreground font-mono mb-1">{f.period}</p>
-          <h3 className="text-base font-semibold text-foreground">{f.title}</h3>
-          <p className="text-sm font-medium" style={{ color: "var(--teal)" }}>{f.school}</p>
-        </div>
+      <div className="mb-3">
+        <p className="text-xs text-muted-foreground font-mono mb-1">{f.period}</p>
+        <h3 className="text-base font-semibold text-foreground">{f.title}</h3>
+        <p className="text-sm font-medium mb-2" style={{ color: "var(--teal)" }}>{f.school}</p>
         {f.badge && (
           <span
-            className="text-[10px] font-semibold uppercase tracking-widest px-2 py-1 rounded shrink-0"
+            className="inline-block text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded"
             style={{ color: "var(--teal)", background: "var(--teal-dim)" }}
           >
             {f.badge}
