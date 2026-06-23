@@ -10,7 +10,7 @@ const links = [
     label: "Téléphone",
     value: "06.30.59.70.72",
     href: "tel:+33630597072",
-    cta: "M'appeler",
+    cta: "Me contacter",
   },
   {
     icon: Mail,
@@ -70,7 +70,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-muted-foreground leading-relaxed"
           >
-            Disponible pour un échange, un entretien ou une première prise de contact. Ouverte à toute opportunité Product Manager ou Product Owner, en Île-de-France, Centre-Val de Loire ou à distance.
+            Disponible pour un échange, un entretien ou une première prise de contact. Ouverte à toute opportunité Product Manager ou Product Owner, en Île-de-France, Centre-Val de Loire ou en format hybride.
           </motion.p>
         </div>
 

@@ -14,7 +14,7 @@ const caseStudies = [
     number: "01",
     tag: "Résolution de problème business · Product Management",
     title: "Welcome to the Jungle : Résoudre un problème de conversion des candidats seniors",
-    subtitle: "Compréhension du problème · Recherche · Analyse · Priorisation · KPIs",
+    subtitle: "Recherche utilisateur · Priorisation · KPIs",
     description:
       "Résolution d'un problème business réel : comprendre pourquoi les candidats seniors ne convertissent pas, identifier les bons leviers, prioriser les opportunités et structurer un plan d'action orienté impact.",
     problem:
@@ -42,7 +42,7 @@ const caseStudies = [
     number: "02",
     tag: "Conception produit · Besoins utilisateurs sensibles",
     title: "Baume : Concevoir un espace communautaire sécurisé autour d'un besoin utilisateur sensible",
-    subtitle: "Product Owner · Empathie · Cadrage · Coordination produit/tech · Livraison",
+    subtitle: "Product Owner · Cadrage · Livraison",
     description:
       "Rôle Product Owner & développeuse dans une équipe de 3 (Lead Tech + développeur). Objectif : concevoir un espace communautaire sécurisé pour accompagner les femmes en rupture sentimentale.",
     problem:
@@ -636,10 +636,10 @@ export default function Projects() {
                   className="text-xs font-semibold tracking-widest uppercase mb-1.5"
                   style={{ color: "var(--teal)" }}
                 >
-                  Refonte portfolio en approche Product Builder
+                  Refonte portfolio en démarche produit
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Portfolio initialement créé avec v0 / Vercel, puis retravaillé dans une démarche Product Builder : récupération de la codebase, audit du positionnement, alignement avec mon CV, priorisation des améliorations, ajustements UX/UI, build local et redéploiement Vercel avec Claude Code.
+                  Portfolio initialement créé avec v0 / Vercel, puis retravaillé avec une démarche produit : récupération de la codebase, audit du positionnement, alignement avec mon CV, priorisation des améliorations, ajustements UX/UI, build local et redéploiement Vercel avec Claude Code.
                 </p>
               </div>
             </div>
