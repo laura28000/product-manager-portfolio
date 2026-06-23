@@ -1,32 +1,32 @@
 "use client"
 
-import { Compass, Users, Target, TrendingUp } from "lucide-react"
+import { Briefcase, Code2, Users, TrendingUp } from "lucide-react"
 import { motion } from "framer-motion"
 
 const cards = [
   {
-    icon: Compass,
+    icon: Briefcase,
     number: "01",
-    title: "Comprendre le terrain",
-    text: "Partir des utilisateurs, des irritants réels et des contraintes opérationnelles pour identifier les bons problèmes avant de proposer une solution.",
+    title: "Leadership & coordination multi-métiers",
+    text: "+12 ans à piloter des équipes, coordonner des parties prenantes aux profils variés et faire avancer des sujets complexes dans des environnements exigeants.",
   },
   {
     icon: Users,
     number: "02",
-    title: "Connecter les équipes",
-    text: "Créer du lien entre les métiers, la tech, les utilisateurs et les parties prenantes pour construire une vision commune et avancer dans la même direction.",
-  },
-  {
-    icon: Target,
-    number: "03",
-    title: "Embarquer avec clarté",
-    text: "Faire collaborer des profils différents avec écoute, structure et énergie, même dans des contextes flous ou exigeants.",
+    title: "Écoute & compréhension des utilisateurs",
+    text: "Partir des utilisateurs, de leurs besoins réels et de leurs contraintes avant de proposer une solution. Structurer une démarche de discovery rigoureuse : distinguer symptômes et causes profondes, valider les hypothèses, interroger les bonnes personnes.",
   },
   {
     icon: TrendingUp,
+    number: "03",
+    title: "Culture KPI & impact business",
+    text: "Chaque initiative doit répondre à un besoin réel et générer un gain mesurable : adoption, performance, temps économisé, qualité ou impact business. Pas d'initiative sans indicateur, pas d'indicateur sans décision.",
+  },
+  {
+    icon: Code2,
     number: "04",
-    title: "Transformer en solutions utiles",
-    text: "Prioriser ce qui crée de la valeur, construire des solutions simples et mesurables, et garder le cap sur l'adoption, l'impact et les résultats.",
+    title: "Product Building & IA",
+    text: "J'utilise l'IA comme copilote de Product Building : Product Discovery assistée, prototypage accéléré, exploration de codebase avec Claude Code, diagnostic et correction de bugs, implémentation de fonctionnalités et génération de Pull Requests GitHub.",
   },
 ]
 
