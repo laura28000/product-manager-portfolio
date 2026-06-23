@@ -44,7 +44,7 @@ const caseStudies = [
     title: "Baume : Concevoir un espace communautaire sécurisé autour d'un besoin utilisateur sensible",
     subtitle: "Product Owner · Empathie · Cadrage · Coordination produit/tech · Livraison",
     description:
-      "Projet de formation réalisé en équipe : Product Owner & développeuse, aux côtés d'un Lead Tech et d'un développeur. Objectif : concevoir un espace communautaire sécurisé autour d'un besoin sensible — accompagner les femmes en rupture sentimentale dans un environnement rassurant et bienveillant.",
+      "Projet de formation réalisé en équipe : Product Owner & développeuse, aux côtés d'un Lead Tech et d'un développeur. Objectif : concevoir un espace communautaire sécurisé autour d'un besoin sensible, accompagner les femmes en rupture sentimentale dans un environnement rassurant et bienveillant.",
     problem:
       "Un besoin réel, fort et sous-adressé : des femmes traversant une rupture cherchent soutien, ressources et communauté, mais les espaces existants ne répondent pas à la sensibilité et à la sécurité que ce contexte exige. Comment créer une expérience digitale à la hauteur de ce besoin ?",
     approach:
@@ -74,7 +74,7 @@ const caseStudies = [
   {
     number: "03",
     tag: "Outil IA · Recherche de poste Product",
-    title: "ProductSignal — Piloter sa recherche de poste Product Manager avec méthode",
+    title: "ProductSignal : piloter sa recherche de poste Product Manager avec méthode",
     subtitle: "Cadrage MVP · Analyse des offres · Priorisation",
     description:
       "ProductSignal est un outil personnel conçu pour structurer et piloter une recherche de poste en Product Management. Il centralise les candidatures, suit leur avancement, analyse les offres, priorise les opportunités et organise les relances au bon moment.",
@@ -118,7 +118,7 @@ const caseStudies = [
     problem:
       "Un artisan reconnu localement pour la qualité de son travail, mais absent du digital. Aucune présence en ligne, aucune visibilité locale structurée, un bouche-à-oreille insuffisant pour soutenir la croissance. Comment construire une présence crédible, génératrice de confiance et d'acquisition, avec un budget maîtrisé ?",
     approach:
-      "Diagnostic du problème business : artisan reconnu localement, mais sans visibilité digitale ni levier de réassurance. Compréhension des attentes clients, audit de la concurrence locale, priorisation des actions dans le bon ordre — visibilité d'abord, preuve sociale ensuite, conversion en dernier. Chaque décision justifiée par son impact business attendu.",
+      "Diagnostic du problème business : artisan reconnu localement, mais sans visibilité digitale ni levier de réassurance. Compréhension des attentes clients, audit de la concurrence locale, priorisation des actions dans le bon ordre : visibilité d'abord, preuve sociale ensuite, conversion en dernier. Chaque décision justifiée par son impact business attendu.",
     solution:
       "Présence digitale locale opérationnelle : site structuré autour des intentions de recherche clients, Google Business Profile actif avec activation des avis comme levier de réassurance, parcours de contact simplifié. Chaque décision orientée ROI et impact mesurable.",
     results: [
