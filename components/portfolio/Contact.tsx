@@ -22,7 +22,7 @@ const links = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/caprara-laura",
+    value: "Laura Caprara",
     href: "https://www.linkedin.com/in/caprara-laura/",
     cta: "Voir mon LinkedIn",
   },
@@ -58,9 +58,9 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-6 text-balance"
           >
-            Échangeons autour de vos enjeux{" "}
+            Discutons d&apos;une opportunité{" "}
             <span className="italic" style={{ color: "var(--teal)" }}>
-              Produit, IA et impact business
+              Product Manager / Product Owner
             </span>
           </motion.h2>
           <motion.p
@@ -70,7 +70,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-muted-foreground leading-relaxed"
           >
-            Product Building, transformation digitale, structuration produit ou IA appliquée : j&apos;aime partir des vrais problèmes, cadrer les bons leviers et construire des solutions utiles, mesurables et adoptées.
+            Disponible pour un échange, un entretien ou une première prise de contact. Ouverte à toute opportunité Product Manager ou Product Owner — Île-de-France, Centre-Val de Loire ou à distance.
           </motion.p>
         </div>
 

@@ -321,7 +321,7 @@ const categories = [
   },
   {
     id: "analytics",
-    label: "Analytics & Insights",
+    label: "Analytics & Analyse",
     icon: BarChart2,
     color: "var(--gold)",
     tools: [
@@ -456,7 +456,7 @@ export default function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex gap-2 mb-8 overflow-x-auto pb-2"
+          className="flex gap-2 mb-8 overflow-x-auto pb-2 scrollbar-hide"
         >
           {categories.map((cat) => (
             <motion.button

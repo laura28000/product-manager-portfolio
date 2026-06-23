@@ -42,7 +42,7 @@ const caseStudies = [
     number: "02",
     tag: "Conception produit · Besoins utilisateurs sensibles",
     title: "Baume : Concevoir un espace communautaire sécurisé autour d'un besoin utilisateur sensible",
-    subtitle: "Product Owner · Empathie · Cadrage · Coordination produit/tech · Delivery",
+    subtitle: "Product Owner · Empathie · Cadrage · Coordination produit/tech · Livraison",
     description:
       "Projet de formation réalisé en équipe : Product Owner & développeuse, aux côtés d'un Lead Tech et d'un développeur. Objectif : concevoir un espace communautaire sécurisé autour d'un besoin sensible — accompagner les femmes en rupture sentimentale dans un environnement rassurant et bienveillant.",
     problem:
@@ -54,10 +54,10 @@ const caseStudies = [
     results: [
       "MVP mobile livré en production en 2 semaines",
       "Parcours empathique conçu avec soin et cohérence",
-      "Coordination produit/tech efficace du cadrage au delivery",
+      "Coordination produit/tech efficace du cadrage à la livraison",
       "Communauté sécurisée et espace de confiance opérationnel",
     ],
-    skills: ["Product Owner", "Empathie utilisateur", "Cadrage MVP", "Coordination produit/tech", "Développement", "Delivery"],
+    skills: ["Product Owner", "Empathie utilisateur", "Cadrage MVP", "Coordination produit/tech", "Développement", "Livraison"],
     color: "oklch(0.58 0.14 300)",
     images: [
       { src: "/projects/baume-signup.png", alt: "Baume — Création de compte" },
@@ -73,9 +73,9 @@ const caseStudies = [
   },
   {
     number: "03",
-    tag: "Projet personnel · Outil IA · Recherche de poste Product Manager",
+    tag: "Outil IA · Recherche de poste Product",
     title: "ProductSignal — Piloter sa recherche de poste Product Manager avec méthode",
-    subtitle: "Cadrage MVP · Analyse des offres · Priorisation · IA · Automatisation",
+    subtitle: "Cadrage MVP · Analyse des offres · Priorisation",
     description:
       "ProductSignal est un outil personnel conçu pour structurer et piloter une recherche de poste en Product Management. Il centralise les candidatures, suit leur avancement, analyse les offres, priorise les opportunités et organise les relances au bon moment.",
     problem:
@@ -546,9 +546,9 @@ export default function Projects() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4 text-balance"
         >
-          Case studies{" "}
+          Cas produits{" "}
           <span className="italic" style={{ color: "var(--teal)" }}>
-            Product & Business
+            & enjeux business
           </span>
         </motion.h2>
         <motion.p
@@ -558,7 +558,7 @@ export default function Projects() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-muted-foreground max-w-xl mb-12 leading-relaxed text-sm"
         >
-          Product Management, IA appliquée et performance business : chaque case study illustre
+          Product Management, IA appliquée et performance business : chaque cas produit illustre
           ma capacité à identifier un problème réel, structurer une démarche produit rigoureuse
           et livrer une solution à impact mesurable.
         </motion.p>
@@ -601,7 +601,7 @@ export default function Projects() {
                   Compréhension technique produit
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Compréhension des stacks front/back, API, bases de données et déploiement pour mieux cadrer les besoins, dialoguer avec les développeurs et suivre la delivery.
+                  Compréhension des stacks front/back, API, bases de données et déploiement pour mieux cadrer les besoins, dialoguer avec les développeurs et suivre la livraison produit.
                 </p>
               </div>
             </div>

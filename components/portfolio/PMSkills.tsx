@@ -6,9 +6,9 @@ import { motion } from "framer-motion"
 const skillGroups = [
   {
     icon: Search,
-    title: "Discovery & Research",
+    title: "Découverte produit & recherche utilisateur",
     description:
-      "Mener une discovery rigoureuse : interviews terrain, analyse SQL, benchmark concurrentiel. Assistée par l'IA pour la synthèse et la formalisation des besoins, avant de construire quoi que ce soit.",
+      "Mener une phase de découverte rigoureuse : interviews terrain, analyse SQL, benchmark concurrentiel. Assistée par l'IA pour la synthèse et la formalisation des besoins, avant de construire quoi que ce soit.",
     skills: ["Product Discovery", "User Research", "Interviews utilisateurs", "Benchmark", "Problem framing"],
   },
   {
@@ -29,22 +29,22 @@ const skillGroups = [
     icon: Cog,
     title: "Exécution & Organisation",
     description:
-      "Conduire des projets du cadrage au delivery en mode Agile, avec une capacité à arbitrer sous contrainte, aligner les équipes transverses et garder le cap sur la valeur livrée.",
+      "Conduire des projets du cadrage à la livraison en mode Agile, avec une capacité à arbitrer sous contrainte, aligner les équipes transverses et garder le cap sur la valeur livrée.",
     skills: ["Agile/Scrum", "Product Ops", "Gestion du Changement", "Amélioration Continue"],
   },
   {
     icon: Rocket,
-    title: "Go-to-Market & Growth",
+    title: "Lancement & acquisition",
     description:
-      "Structurer le lancement, aligner les parties prenantes et piloter l'adoption. Mon background terrain m'a appris qu'un produit ne vit que s'il est adopté, par le terrain et par les utilisateurs.",
+      "Structurer le lancement, aligner les parties prenantes et piloter l'adoption. L'adoption ne se décrète pas : elle se prépare, se mesure et s'ajuste.",
     skills: ["Go-to-Market", "Growth", "Stakeholder Management"],
   },
   {
     icon: Bot,
     title: "IA & automatisation produit",
     description:
-      "Utiliser l'IA et l'automatisation comme leviers de Product Building : veille, benchmark, synthèse de feedbacks, aide à la priorisation, génération de livrables PM et automatisation de workflows métier avec Make, n8n ou Zapier.",
-    skills: ["IA appliquée", "Claude Code", "Make / n8n", "Zapier", "Workflows", "Product Building"],
+      "Utiliser l'IA et l'automatisation comme leviers de Product Building : veille, benchmark, synthèse de feedbacks, aide à la priorisation, génération de livrables PM et automatisation de processus métier avec Make, n8n ou Zapier.",
+    skills: ["IA appliquée", "Claude Code", "Make / n8n", "Zapier", "Processus", "Product Building"],
   },
 ]
 
