@@ -88,7 +88,7 @@ export default function Contact() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="group bg-card border border-border rounded-xl p-8 flex flex-col gap-4 hover:border-primary/50 transition-colors duration-300 cursor-pointer"
+              className="group bg-card border border-border rounded-xl p-5 sm:p-8 flex flex-col gap-4 hover:border-primary/50 transition-colors duration-300 cursor-pointer"
             >
               <div
                 className="w-10 h-10 rounded-lg flex items-center justify-center"

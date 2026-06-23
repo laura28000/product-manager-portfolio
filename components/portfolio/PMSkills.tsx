@@ -106,7 +106,7 @@ export default function PMSkills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="rounded-xl px-8 py-6 mb-12 max-w-3xl mx-auto text-center"
+          className="rounded-xl px-5 sm:px-8 py-5 sm:py-6 mb-8 sm:mb-12 max-w-3xl mx-auto text-center"
           style={{ background: "var(--teal-dim)", border: "1px solid color-mix(in srgb, var(--teal) 20%, transparent)" }}
         >
           <p className="font-serif text-xl sm:text-2xl font-bold text-foreground leading-snug mb-4 text-balance">

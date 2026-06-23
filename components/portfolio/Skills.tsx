@@ -417,10 +417,10 @@ export default function Skills() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mb-6 flex flex-wrap items-center justify-center gap-2 text-xs font-medium"
+          className="mb-6 flex flex-nowrap sm:flex-wrap items-center justify-start sm:justify-center gap-2 text-xs font-medium overflow-x-auto pb-1 sm:pb-0"
         >
           {["BESOIN", "PROBLÈME", "ANALYSE", "SOLUTION", "OUTIL"].map((step, i, arr) => (
-            <div key={step} className="flex items-center gap-2">
+            <div key={step} className="flex items-center gap-2 shrink-0">
               <span
                 className="px-3 py-1.5 rounded-md border"
                 style={{
@@ -456,7 +456,7 @@ export default function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex flex-wrap gap-2 mb-8"
+          className="flex gap-2 mb-8 overflow-x-auto pb-2"
         >
           {categories.map((cat) => (
             <motion.button
@@ -464,7 +464,7 @@ export default function Skills() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setActive(cat.id)}
-              className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border transition-colors duration-200 ${
+              className={`shrink-0 inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-medium border transition-colors duration-200 ${
                 active === cat.id
                   ? "text-white border-transparent"
                   : "text-muted-foreground bg-card border-border hover:border-primary/40 hover:text-foreground"

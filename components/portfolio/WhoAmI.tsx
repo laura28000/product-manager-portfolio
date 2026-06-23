@@ -79,7 +79,7 @@ export default function WhoAmI() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="max-w-3xl mb-14 space-y-4 text-muted-foreground leading-relaxed text-sm"
+          className="max-w-3xl mb-8 sm:mb-14 space-y-4 text-muted-foreground leading-relaxed text-sm"
         >
           <p>
             Après plus de 12 ans dans des environnements opérationnels exigeants, j&apos;ai développé
@@ -105,7 +105,7 @@ export default function WhoAmI() {
               key={card.number}
               variants={cardVariants}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
-              className="bg-card border border-border rounded-xl p-7 hover:border-primary/40 transition-colors duration-300 relative overflow-hidden"
+              className="bg-card border border-border rounded-xl p-5 sm:p-7 hover:border-primary/40 transition-colors duration-300 relative overflow-hidden"
             >
               <span
                 className="absolute top-4 right-5 font-serif text-5xl font-bold opacity-5 select-none"
@@ -130,7 +130,7 @@ export default function WhoAmI() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="rounded-xl px-8 py-6 max-w-3xl mx-auto text-center"
+          className="rounded-xl px-5 sm:px-8 py-5 sm:py-6 max-w-3xl mx-auto text-center"
           style={{ background: "var(--teal-dim)", border: "1px solid color-mix(in srgb, var(--teal) 20%, transparent)" }}
         >
           <p className="text-base text-muted-foreground leading-relaxed">

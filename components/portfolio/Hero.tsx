@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden pt-20"
+      className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden overflow-x-hidden pt-20"
     >
       {/* Subtle background grid */}
       <div
@@ -27,7 +27,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-5xl mx-auto w-full">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left: Text content */}
           <div>
             {/* Badge */}
@@ -130,7 +130,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="relative flex justify-center"
           >
-            <div className="relative w-72 h-88 rounded-2xl overflow-hidden border border-border shadow-xl">
+            <div className="relative w-52 h-64 sm:w-64 sm:h-80 md:w-72 md:h-88 rounded-2xl overflow-hidden border border-border shadow-xl">
               <Image
                 src="/profile.jpg"
                 alt="Laura Caprara — Product Manager"
