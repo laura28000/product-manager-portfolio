@@ -14,7 +14,7 @@ const cards = [
     icon: Users,
     number: "02",
     title: "Écoute & compréhension des utilisateurs",
-    text: "Partir des utilisateurs, de leurs besoins réels et de leurs contraintes avant de proposer une solution. Structurer une démarche de discovery rigoureuse : distinguer symptômes et causes profondes, valider les hypothèses, interroger les bonnes personnes.",
+    text: "Partir des besoins et des contraintes réelles avant de proposer une solution. Identifier les bonnes personnes à interroger, distinguer symptômes et causes profondes, valider les hypothèses.",
   },
   {
     icon: TrendingUp,
@@ -26,7 +26,7 @@ const cards = [
     icon: Code2,
     number: "04",
     title: "Product Building & IA",
-    text: "J'utilise l'IA comme copilote de Product Building : Product Discovery assistée, prototypage accéléré, exploration de codebase avec Claude Code, diagnostic et correction de bugs, implémentation de fonctionnalités et génération de Pull Requests GitHub.",
+    text: "J'utilise l'IA comme copilote produit : discovery assistée, prototypage accéléré, exploration de codebase, implémentation de fonctionnalités et génération de Pull Requests avec Claude Code.",
   },
 ]
 

@@ -43,8 +43,8 @@ const skillGroups = [
     icon: Bot,
     title: "IA & automatisation produit",
     description:
-      "Utiliser l'IA et l'automatisation comme leviers de Product Building : veille, benchmark, synthèse de feedbacks, aide à la priorisation, génération de livrables PM et automatisation de processus métier avec Make, n8n ou Zapier.",
-    skills: ["IA appliquée", "Claude Code", "Make / n8n", "Zapier", "Processus", "Product Building"],
+      "Mobiliser l'IA et l'automatisation au bon moment : veille, synthèse de feedbacks, aide à la priorisation, génération de livrables PM et automatisation de processus avec Make, n8n ou Zapier.",
+    skills: ["IA appliquée", "Claude Code", "Make / n8n", "Zapier"],
   },
 ]
 

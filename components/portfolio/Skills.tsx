@@ -387,30 +387,6 @@ export default function Skills() {
           bons leviers et accompagner leur mise en œuvre.
         </motion.p>
 
-        {/* Manifeste bloc */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="mb-4 max-w-2xl px-5 py-4 rounded-lg border text-sm leading-relaxed text-muted-foreground"
-          style={{
-            borderColor: "color-mix(in oklch, var(--teal) 25%, transparent)",
-            background: "color-mix(in oklch, var(--teal) 5%, var(--background))",
-          }}
-        >
-          <p className="mb-2">
-            Dans un environnement où les technologies évoluent en permanence, je privilégie{" "}
-            <span className="font-medium text-foreground">la compréhension des besoins, l&apos;expérimentation et la capacité d&apos;adaptation</span>{" "}
-            plutôt que la maîtrise d&apos;un outil unique.
-          </p>
-          <p>
-            Veille active autour des{" "}
-            <span className="font-medium text-foreground">LLMs, workflows IA, architectures RAG, agents IA, orchestration et automatisation de processus</span>{" "}
-            afin d&apos;identifier les usages capables d&apos;apporter un réel gain opérationnel ou business.
-          </p>
-        </motion.div>
-
         {/* Schéma raisonnement outils */}
         <motion.div
           initial={{ opacity: 0 }}

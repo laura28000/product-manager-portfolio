@@ -18,7 +18,7 @@ const caseStudies = [
     description:
       "Résolution d'un problème business réel : comprendre pourquoi les candidats seniors ne convertissent pas, identifier les bons leviers, prioriser les opportunités et structurer un plan d'action orienté impact.",
     problem:
-      "Les recruteurs recherchent des profils expérimentés, mais l'audience du jobboard reste majoritairement orientée profils juniors. Écart de conversion significatif identifié entre les deux segments : enjeu business direct sur la valeur perçue de la plateforme.",
+      "L'audience du jobboard est majoritairement orientée profils juniors, alors que les recruteurs cherchent de l'expérience : écart de conversion identifié, enjeu business direct sur la valeur perçue de la plateforme.",
     approach:
       "Immersion dans le problème : analyse SQL des données de conversion, 5 interviews utilisateurs, benchmark concurrentiel. Identification des freins réels (filtres incomplets, faible visibilité full remote, manque de personnalisation). Priorisation RICE pour arbitrer les opportunités à fort impact et aligner les décisions sur des données tangibles.",
     solution:
@@ -29,7 +29,7 @@ const caseStudies = [
       "Leviers de conversion priorisés sur la base des données",
       "Roadmap, KPIs et go-to-market structurés et actionnables",
     ],
-    skills: ["Compréhension du problème", "User Research", "Analyse SQL", "Priorisation RICE", "Roadmap", "KPIs", "Prise de décision"],
+    skills: ["User Research", "Analyse SQL", "Priorisation RICE", "Roadmap", "KPIs"],
     color: "var(--teal)",
     images: [
       { src: "/projects/wttj-title.png", alt: "Welcome to the Jungle — Projet Join Maestro" },
@@ -44,9 +44,9 @@ const caseStudies = [
     title: "Baume : Concevoir un espace communautaire sécurisé autour d'un besoin utilisateur sensible",
     subtitle: "Product Owner · Empathie · Cadrage · Coordination produit/tech · Livraison",
     description:
-      "Projet de formation réalisé en équipe : Product Owner & développeuse, aux côtés d'un Lead Tech et d'un développeur. Objectif : concevoir un espace communautaire sécurisé autour d'un besoin sensible, accompagner les femmes en rupture sentimentale dans un environnement rassurant et bienveillant.",
+      "Rôle Product Owner & développeuse dans une équipe de 3 (Lead Tech + développeur). Objectif : concevoir un espace communautaire sécurisé pour accompagner les femmes en rupture sentimentale.",
     problem:
-      "Un besoin réel, fort et sous-adressé : des femmes traversant une rupture cherchent soutien, ressources et communauté, mais les espaces existants ne répondent pas à la sensibilité et à la sécurité que ce contexte exige. Comment créer une expérience digitale à la hauteur de ce besoin ?",
+      "Des femmes traversant une rupture cherchent soutien et communauté, mais aucun espace existant ne répond à la sensibilité et à la sécurité qu'exige ce contexte.",
     approach:
       "Ma contribution : cadrage produit, définition du besoin utilisateur, structuration des parcours, priorisation des fonctionnalités, coordination avec l'équipe technique et participation au développement du MVP. Ce projet illustre ma capacité à travailler à l'interface produit / tech : comprendre un problème utilisateur, le traduire en solution concrète et livrer avec une équipe dans un temps court.",
     solution:
@@ -77,9 +77,9 @@ const caseStudies = [
     title: "ProductSignal : piloter sa recherche de poste Product Manager avec méthode",
     subtitle: "Cadrage MVP · Analyse des offres · Priorisation",
     description:
-      "ProductSignal est un outil personnel conçu pour structurer et piloter une recherche de poste en Product Management. Il centralise les candidatures, suit leur avancement, analyse les offres, priorise les opportunités et organise les relances au bon moment.",
+      "ProductSignal est un outil personnel pour structurer une recherche de poste Product Manager : centralisation des candidatures, analyse des offres, priorisation et suivi des relances.",
     problem:
-      "Suivre activement ses candidatures Product Manager ou Product Owner, évaluer la pertinence des offres et décider où concentrer son énergie : sans méthode, cette démarche devient vite chronophage et dispersée. Aucun outil ne permettait ce niveau d'analyse personnalisée et de pilotage, adapté à une recherche de poste Product.",
+      "Sans méthode, une recherche de poste Product Manager devient vite chronophage et dispersée : trop d'offres à analyser, trop peu de visibilité sur les priorités et les relances.",
     approach:
       "Partir du problème vécu, le valider, définir un périmètre minimal utile. Cadrage du MVP, identification des fonctionnalités prioritaires, structuration du parcours et prototypage avec Claude Code pour intégrer IA et automatisation au service de la prise de décision.",
     solution:
@@ -102,7 +102,7 @@ const caseStudies = [
         "Itérations actives",
       ],
     },
-    skills: ["Cadrage MVP", "IA appliquée", "Analyse des offres", "Claude Code", "Définition du besoin", "Priorisation"],
+    skills: ["Cadrage MVP", "IA appliquée", "Analyse des offres", "Claude Code", "Priorisation"],
     color: "oklch(0.55 0.2 260)",
     images: [] as ProjectImage[],
     link: "https://stitch.withgoogle.com/preview/1191489258350450361?node-id=3c006e9634c34977b7eb2bd608b1ef58",
@@ -116,7 +116,7 @@ const caseStudies = [
     description:
       "Diagnostic business et démarche Product pour une TPE artisanale : identification d'un besoin non adressé, priorisation des leviers d'acquisition, mise en œuvre et mesure d'impact. Résultat : top 10 Google et 25 avis clients obtenus en 1 mois.",
     problem:
-      "Un artisan reconnu localement pour la qualité de son travail, mais absent du digital. Aucune présence en ligne, aucune visibilité locale structurée, un bouche-à-oreille insuffisant pour soutenir la croissance. Comment construire une présence crédible, génératrice de confiance et d'acquisition, avec un budget maîtrisé ?",
+      "Un artisan reconnu localement, mais invisible en ligne : sans présence digitale ni levier de réassurance, le bouche-à-oreille seul ne suffit plus à soutenir la croissance.",
     approach:
       "Diagnostic du problème business : artisan reconnu localement, mais sans visibilité digitale ni levier de réassurance. Compréhension des attentes clients, audit de la concurrence locale, priorisation des actions dans le bon ordre : visibilité d'abord, preuve sociale ensuite, conversion en dernier. Chaque décision justifiée par son impact business attendu.",
     solution:
