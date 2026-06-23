@@ -62,7 +62,7 @@ export default function Hero() {
               className="text-xl font-semibold mb-1"
               style={{ color: "var(--teal)" }}
             >
-              Product Manager · Product Builder
+              Product Manager · Product Owner
             </motion.p>
 
             {/* Positioning line */}
@@ -108,19 +108,22 @@ export default function Hero() {
             </motion.p>
 
             {/* Intro */}
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="text-sm text-muted-foreground max-w-xl leading-relaxed text-pretty"
+              className="space-y-3 text-sm text-muted-foreground max-w-xl leading-relaxed"
             >
-              Après plus de 12 ans à fédérer des équipes, gérer des situations complexes et faire
-              avancer des collectifs dans des environnements exigeants, je construis aujourd&apos;hui
-              une approche Product hybride : terrain, utilisateurs, business, tech, data, IA et
-              automatisation. Mon objectif : partir des vrais problèmes, connecter les bonnes
-              personnes et transformer des besoins concrets en solutions simples, utiles, adoptées
-              et mesurables.
-            </motion.p>
+              <p>
+                Après 12 ans à piloter des équipes dans des environnements exigeants, j&apos;ai
+                construit une approche Product ancrée dans les utilisateurs, le terrain et la
+                création de valeur.
+              </p>
+              <p>
+                Mon objectif : partir des vrais problèmes, mobiliser les bonnes personnes et livrer
+                des solutions qui s&apos;adoptent, se mesurent et créent un impact concret.
+              </p>
+            </motion.div>
           </div>
 
           {/* Right: Profile image */}
@@ -150,13 +153,13 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12"
         >
           <motion.a
-            href="#about"
+            href="#projects"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.98 }}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-md font-semibold text-sm transition-all duration-200"
             style={{ background: "var(--teal)", color: "white" }}
           >
-            Découvrir mon profil
+            Voir mes projets
           </motion.a>
           <motion.a
             href="#contact"

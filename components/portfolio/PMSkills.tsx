@@ -9,7 +9,7 @@ const skillGroups = [
     title: "Discovery & Research",
     description:
       "Mener une discovery rigoureuse : interviews terrain, analyse SQL, benchmark concurrentiel. Assistée par l'IA pour la synthèse et la formalisation des besoins, avant de construire quoi que ce soit.",
-    skills: ["Product Discovery", "User Research"],
+    skills: ["Product Discovery", "User Research", "Interviews utilisateurs", "Benchmark", "Problem framing"],
   },
   {
     icon: Target,

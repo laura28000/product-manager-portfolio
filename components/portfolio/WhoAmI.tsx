@@ -82,10 +82,9 @@ export default function WhoAmI() {
           className="max-w-3xl mb-8 sm:mb-14 space-y-4 text-muted-foreground leading-relaxed text-sm"
         >
           <p>
-            Après plus de 12 ans dans des environnements opérationnels exigeants, j&apos;ai développé
-            une conviction forte : les meilleurs produits naissent quand on prend le temps de
-            comprendre le terrain, les utilisateurs, les irritants du quotidien et les personnes
-            derrière les besoins.
+            Mes 12 ans en management opérationnel m&apos;ont appris qu&apos;un bon produit ne naît pas
+            seulement d&apos;une idée, mais d&apos;une lecture fine des besoins, des contraintes réelles
+            et des personnes impliquées.
           </p>
           <p>
             Curieuse, persévérante et orientée collectif, j&apos;aime créer du lien entre les équipes,
@@ -144,17 +143,11 @@ export default function WhoAmI() {
             <span className="w-2 h-2 rounded-full shrink-0" style={{ background: "var(--teal)" }} />
             Ma vision de l&apos;IA
           </p>
-          <div className="space-y-2 text-sm text-muted-foreground leading-relaxed">
-            <p>
-              L&apos;IA n&apos;est pas une case à cocher ni une solution à ajouter partout par effet de mode.
-              Avant de l&apos;intégrer, je questionne le besoin réel, le coût, l&apos;usage, l&apos;impact
-              attendu et la valeur créée.
-            </p>
-            <p>
-              L&apos;objectif n&apos;est pas de produire toujours plus de fonctionnalités, mais de construire
-              les bonnes solutions : utiles, adoptées, rentables et mesurables.
-            </p>
-          </div>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Mon approche reste pragmatique : l&apos;IA n&apos;est pertinente que si elle répond à un
+            besoin réel, crée un gain mesurable et apporte plus de valeur qu&apos;elle ne génère de
+            complexité ou de coût.
+          </p>
         </motion.div>
 
         <motion.div
@@ -167,9 +160,9 @@ export default function WhoAmI() {
         >
           <p className="text-base text-muted-foreground leading-relaxed">
             <span className="font-semibold text-foreground">Ma conviction :</span>{" "}
-            construire des produits utiles, c&apos;est d&apos;abord comprendre les personnes et les
-            organisations, créer les conditions pour que les équipes avancent ensemble, et transformer
-            des problèmes réels en solutions simples, adoptées et créatrices de valeur.{" "}
+            un bon produit, c&apos;est celui que les utilisateurs adoptent parce qu&apos;il résout un
+            vrai problème. Le construire exige de relier les équipes, de comprendre les contraintes du
+            terrain et de ne jamais perdre de vue la valeur créée.{" "}
             <span className="text-foreground font-medium">Avec méthode, énergie collective et sens de l&apos;impact.</span>
           </p>
         </motion.div>

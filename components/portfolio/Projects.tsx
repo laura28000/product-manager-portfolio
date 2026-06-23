@@ -40,6 +40,39 @@ const caseStudies = [
   },
   {
     number: "02",
+    tag: "Conception produit · Besoins utilisateurs sensibles",
+    title: "Baume : Concevoir un espace communautaire sécurisé autour d'un besoin utilisateur sensible",
+    subtitle: "Product Owner · Empathie · Cadrage · Coordination produit/tech · Delivery",
+    description:
+      "Projet de formation réalisé en équipe : Product Owner & développeuse, aux côtés d'un Lead Tech et d'un développeur. Objectif : concevoir un espace communautaire sécurisé autour d'un besoin sensible — accompagner les femmes en rupture sentimentale dans un environnement rassurant et bienveillant.",
+    problem:
+      "Un besoin réel, fort et sous-adressé : des femmes traversant une rupture cherchent soutien, ressources et communauté, mais les espaces existants ne répondent pas à la sensibilité et à la sécurité que ce contexte exige. Comment créer une expérience digitale à la hauteur de ce besoin ?",
+    approach:
+      "Ma contribution : cadrage produit, définition du besoin utilisateur, structuration des parcours, priorisation des fonctionnalités, coordination avec l'équipe technique et participation au développement du MVP. Ce projet illustre ma capacité à travailler à l'interface produit / tech : comprendre un problème utilisateur, le traduire en solution concrète et livrer avec une équipe dans un temps court.",
+    solution:
+      "MVP mobile livré de bout en bout : onboarding personnalisé et rassurant, fil communautaire modéré, ressources d'accompagnement et ateliers virtuels. Un produit cohérent entre vision, besoins utilisateurs, faisabilité technique et exécution.",
+    results: [
+      "MVP mobile livré en production en 2 semaines",
+      "Parcours empathique conçu avec soin et cohérence",
+      "Coordination produit/tech efficace du cadrage au delivery",
+      "Communauté sécurisée et espace de confiance opérationnel",
+    ],
+    skills: ["Product Owner", "Empathie utilisateur", "Cadrage MVP", "Coordination produit/tech", "Développement", "Delivery"],
+    color: "oklch(0.58 0.14 300)",
+    images: [
+      { src: "/projects/baume-signup.png", alt: "Baume — Création de compte" },
+      { src: "/projects/baume-onboarding.png", alt: "Baume — Onboarding" },
+      { src: "/projects/baume-screens.png", alt: "Baume — Accueil" },
+      { src: "/projects/baume-club.png", alt: "Baume — Club communautaire" },
+      { src: "/projects/baume-resources.png", alt: "Baume — Ressources & outils" },
+      { src: "/projects/baume-profile.png", alt: "Baume — Profil utilisateur" },
+      { src: "/projects/baume-charter.png", alt: "Baume — Charte de bienveillance" },
+    ],
+    link: "https://www.baume.app/",
+    linkLabel: "Voir Baume",
+  },
+  {
+    number: "03",
     tag: "Projet personnel · Outil IA · Recherche de poste Product Manager",
     title: "ProductSignal — Piloter sa recherche de poste Product Manager avec méthode",
     subtitle: "Cadrage MVP · Analyse des offres · Priorisation · IA · Automatisation",
@@ -76,49 +109,16 @@ const caseStudies = [
     linkLabel: "Voir le prototype",
   },
   {
-    number: "03",
-    tag: "Conception produit · Besoins utilisateurs sensibles",
-    title: "Baume : Concevoir un espace communautaire sécurisé autour d'un besoin utilisateur sensible",
-    subtitle: "Empathie · Cadrage · Coordination produit/tech · Delivery",
-    description:
-      "Conception et livraison en 2 semaines d'un espace communautaire autour d'un besoin utilisateur sensible : accompagner les femmes en rupture sentimentale dans un environnement rassurant, sécurisé et bienveillant.",
-    problem:
-      "Un besoin réel, fort et sous-adressé : des femmes traversant une rupture cherchent soutien, ressources et communauté, mais les espaces existants ne répondent pas à la sensibilité et à la sécurité que ce contexte exige. Comment créer une expérience digitale à la hauteur de ce besoin ?",
-    approach:
-      "Écoute et compréhension des besoins utilisateurs, définition d'un parcours empathique, cadrage du scope MVP, structuration des user flows et coordination produit/tech à chaque étape : onboarding, logique communautaire, modération et sécurité.",
-    solution:
-      "MVP mobile livré de bout en bout : onboarding personnalisé et rassurant, fil communautaire modéré, ressources d'accompagnement et ateliers virtuels. Un produit cohérent entre vision, besoins utilisateurs, faisabilité technique et exécution.",
-    results: [
-      "MVP mobile livré en production en 2 semaines",
-      "Parcours empathique conçu avec soin et cohérence",
-      "Coordination produit/tech efficace du cadrage au delivery",
-      "Communauté sécurisée et espace de confiance opérationnel",
-    ],
-    skills: ["Empathie utilisateur", "Cadrage MVP", "Coordination produit/tech", "UX sensible", "Delivery", "Communauté"],
-    color: "oklch(0.58 0.14 300)",
-    images: [
-      { src: "/projects/baume-signup.png", alt: "Baume — Création de compte" },
-      { src: "/projects/baume-onboarding.png", alt: "Baume — Onboarding" },
-      { src: "/projects/baume-screens.png", alt: "Baume — Accueil" },
-      { src: "/projects/baume-club.png", alt: "Baume — Club communautaire" },
-      { src: "/projects/baume-resources.png", alt: "Baume — Ressources & outils" },
-      { src: "/projects/baume-profile.png", alt: "Baume — Profil utilisateur" },
-      { src: "/projects/baume-charter.png", alt: "Baume — Charte de bienveillance" },
-    ],
-    link: "https://www.baume.app/",
-    linkLabel: "Voir Baume",
-  },
-  {
     number: "04",
-    tag: "Transformation digitale · Acquisition locale",
+    tag: "Démarche Product · Acquisition locale",
     title: "TVB Jardins : Transformer un besoin terrain en levier d'acquisition local",
-    subtitle: "Compréhension du besoin · Stratégie locale · Confiance · ROI",
+    subtitle: "Diagnostic business · Priorisation des leviers · Confiance · ROI",
     description:
-      "Diagnostic business et stratégie d'acquisition locale pour une TPE : analyse du manque à gagner lié à l'absence de visibilité digitale, création d'un site WordPress de zéro, fiche Google Business Profile, stratégie SEO/conversion à ROI rapide. Résultat : top 10 Google et 25 avis récoltés en 1 mois.",
+      "Diagnostic business et démarche Product pour une TPE artisanale : identification d'un besoin non adressé, priorisation des leviers d'acquisition, mise en œuvre et mesure d'impact. Résultat : top 10 Google et 25 avis clients obtenus en 1 mois.",
     problem:
       "Un artisan reconnu localement pour la qualité de son travail, mais absent du digital. Aucune présence en ligne, aucune visibilité locale structurée, un bouche-à-oreille insuffisant pour soutenir la croissance. Comment construire une présence crédible, génératrice de confiance et d'acquisition, avec un budget maîtrisé ?",
     approach:
-      "Écoute du besoin, compréhension du contexte métier et des attentes clients, audit de la concurrence locale, définition d'une stratégie d'acquisition adaptée. Mise en place des bons leviers dans le bon ordre : visibilité, preuve sociale, confiance, conversion.",
+      "Diagnostic du problème business : artisan reconnu localement, mais sans visibilité digitale ni levier de réassurance. Compréhension des attentes clients, audit de la concurrence locale, priorisation des actions dans le bon ordre — visibilité d'abord, preuve sociale ensuite, conversion en dernier. Chaque décision justifiée par son impact business attendu.",
     solution:
       "Présence digitale locale opérationnelle : site structuré autour des intentions de recherche clients, Google Business Profile actif avec activation des avis comme levier de réassurance, parcours de contact simplifié. Chaque décision orientée ROI et impact mesurable.",
     results: [
