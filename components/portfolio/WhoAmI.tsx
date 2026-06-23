@@ -1,32 +1,32 @@
 "use client"
 
-import { Briefcase, Code2, Users, TrendingUp } from "lucide-react"
+import { Compass, Users, Target, TrendingUp } from "lucide-react"
 import { motion } from "framer-motion"
 
 const cards = [
   {
-    icon: Briefcase,
+    icon: Compass,
     number: "01",
-    title: "Leadership & coordination multi-métiers",
-    text: "+12 ans à piloter des équipes, coordonner des parties prenantes aux profils variés et faire avancer des sujets complexes dans des environnements exigeants.",
+    title: "Comprendre le terrain",
+    text: "Partir des utilisateurs, des irritants réels et des contraintes opérationnelles pour identifier les bons problèmes avant de proposer une solution.",
   },
   {
     icon: Users,
     number: "02",
-    title: "Écoute & compréhension des utilisateurs",
-    text: "Partir des utilisateurs, de leurs besoins réels et de leurs contraintes avant de proposer une solution. Structurer une démarche de discovery rigoureuse : distinguer symptômes et causes profondes, valider les hypothèses, interroger les bonnes personnes.",
+    title: "Connecter les équipes",
+    text: "Créer du lien entre les métiers, la tech, les utilisateurs et les parties prenantes pour construire une vision commune et avancer dans la même direction.",
+  },
+  {
+    icon: Target,
+    number: "03",
+    title: "Embarquer avec clarté",
+    text: "Faire collaborer des profils différents avec écoute, structure et énergie, même dans des contextes flous ou exigeants.",
   },
   {
     icon: TrendingUp,
-    number: "03",
-    title: "Culture KPI & impact business",
-    text: "Chaque initiative doit répondre à un besoin réel et générer un gain mesurable : adoption, performance, temps économisé, qualité ou impact business. Pas d'initiative sans indicateur, pas d'indicateur sans décision.",
-  },
-  {
-    icon: Code2,
     number: "04",
-    title: "Product Building & IA",
-    text: "J'utilise l'IA comme copilote de Product Building : Product Discovery assistée, prototypage accéléré, exploration de codebase avec Claude Code, diagnostic et correction de bugs, implémentation de fonctionnalités et génération de Pull Requests GitHub.",
+    title: "Transformer en solutions utiles",
+    text: "Prioriser ce qui crée de la valeur, construire des solutions simples et mesurables, et garder le cap sur l'adoption, l'impact et les résultats.",
   },
 ]
 
@@ -68,9 +68,9 @@ export default function WhoAmI() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4 text-balance"
         >
-          Un profil Product ancré dans le terrain,{" "}
+          Comprendre, connecter, embarquer,{" "}
           <span className="italic" style={{ color: "var(--teal)" }}>
-            l&apos;humain et l&apos;impact.
+            transformer.
           </span>
         </motion.h2>
 
@@ -82,14 +82,14 @@ export default function WhoAmI() {
           className="max-w-3xl mb-14 space-y-4 text-muted-foreground leading-relaxed text-sm"
         >
           <p>
-            Une maturité opérationnelle forte, une culture produit structurée et une capacité à
-            traduire les contraintes terrain en décisions actionnables. J&apos;évolue avec la même
-            aisance auprès d&apos;opérateurs, de développeurs, de responsables qualité ou de directions.
+            Après plus de 12 ans dans des environnements opérationnels exigeants, j&apos;ai développé
+            une conviction forte : les meilleurs produits naissent quand on prend le temps de
+            comprendre le terrain, les utilisateurs, les irritants du quotidien et les personnes
+            derrière les besoins.
           </p>
           <p>
-            Ma valeur ajoutée réside dans ma compréhension des personnes, des organisations et des
-            systèmes, et dans ma capacité à mobiliser les bons leviers, humains et technologiques,
-            pour construire des solutions adoptées par le terrain.
+            Curieuse, persévérante et orientée collectif, j&apos;aime créer du lien entre les équipes,
+            faciliter la collaboration et faire avancer les sujets avec clarté, énergie et exigence.
           </p>
         </motion.div>
 
@@ -135,9 +135,10 @@ export default function WhoAmI() {
         >
           <p className="text-base text-muted-foreground leading-relaxed">
             <span className="font-semibold text-foreground">Ma conviction :</span>{" "}
-            faire avancer un projet consiste avant tout à aligner les personnes qui permettront sa réussite.
-            Comprendre les humains, les contraintes opérationnelles et les objectifs business permet de
-            transformer des problématiques complexes en solutions concrètes, adoptées et créatrices de valeur.
+            construire des produits utiles, c&apos;est d&apos;abord comprendre les personnes et les
+            organisations, créer les conditions pour que les équipes avancent ensemble, et transformer
+            des problèmes réels en solutions simples, adoptées et créatrices de valeur.{" "}
+            <span className="text-foreground font-medium">Avec méthode, énergie collective et sens de l&apos;impact.</span>
           </p>
         </motion.div>
       </div>

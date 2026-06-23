@@ -102,12 +102,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="text-base text-muted-foreground max-w-xl leading-relaxed mb-5 text-pretty"
+              className="text-base font-medium text-foreground max-w-xl leading-relaxed mb-5 text-pretty"
             >
-              Construire des produits avec les{" "}
-              <strong className="text-foreground font-medium">utilisateurs</strong>,
-              guidés par la <strong className="text-foreground font-medium">donnée</strong> et
-              adoptés par le <strong className="text-foreground font-medium">terrain</strong>.
+              Comprendre le terrain. Connecter les équipes. Transformer les irritants en solutions digitales utiles.
             </motion.p>
 
             {/* Intro */}
@@ -117,9 +114,12 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="text-sm text-muted-foreground max-w-xl leading-relaxed text-pretty"
             >
-              Après plus de 12 ans à fédérer des équipes, aligner des parties prenantes et piloter des
-              transformations dans des environnements exigeants, j&apos;identifie des opportunités,
-              construis des solutions, mesure leur impact et les fais évoluer jusqu&apos;à leur adoption.
+              Après plus de 12 ans à fédérer des équipes, gérer des situations complexes et faire
+              avancer des collectifs dans des environnements exigeants, je construis aujourd&apos;hui
+              une approche Product hybride : terrain, utilisateurs, business, tech, data, IA et
+              automatisation. Mon objectif : partir des vrais problèmes, connecter les bonnes
+              personnes et transformer des besoins concrets en solutions simples, utiles, adoptées
+              et mesurables.
             </motion.p>
           </div>
 
