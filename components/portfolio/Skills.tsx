@@ -271,6 +271,15 @@ const ToolLogos: Record<string, React.FC<{ className?: string }>> = {
       <path d="M5.042 15.165a2.528 2.528 0 01-2.52 2.523A2.528 2.528 0 010 15.165a2.527 2.527 0 012.522-2.52h2.52v2.52zm1.271 0a2.527 2.527 0 012.521-2.52 2.527 2.527 0 012.521 2.52v6.313A2.528 2.528 0 018.834 24a2.528 2.528 0 01-2.521-2.522v-6.313zm2.521-10.123a2.528 2.528 0 01-2.521-2.52A2.528 2.528 0 018.834 0a2.528 2.528 0 012.521 2.522v2.52H8.834zm0 1.271a2.528 2.528 0 012.521 2.521 2.528 2.528 0 01-2.521 2.521H2.522A2.528 2.528 0 010 8.834a2.528 2.528 0 012.522-2.521h6.312zm10.122 2.521a2.528 2.528 0 012.522-2.521A2.528 2.528 0 0124 8.834a2.528 2.528 0 01-2.522 2.521h-2.522V8.834zm-1.268 0a2.528 2.528 0 01-2.523 2.521 2.527 2.527 0 01-2.52-2.521V2.522A2.527 2.527 0 0115.165 0a2.528 2.528 0 012.523 2.522v6.312zm-2.523 10.122a2.528 2.528 0 012.523 2.522A2.528 2.528 0 0115.165 24a2.527 2.527 0 01-2.52-2.522v-2.522h2.52zm0-1.268a2.527 2.527 0 01-2.52-2.523 2.526 2.526 0 012.52-2.52h6.313A2.527 2.527 0 0124 15.165a2.528 2.528 0 01-2.522 2.523h-6.313z" fill="#E01E5A"/>
     </svg>
   ),
+  "Figma Make": ({ className }) => (
+    <svg className={className} viewBox="0 0 24 24" fill="none">
+      <path d="M8 16c0 2.208 1.792 4 4 4s4-1.792 4-4v-4H8v4z" fill="#0ACF83"/>
+      <path d="M8 8c0-2.208 1.792-4 4-4s4 1.792 4 4v4H8V8z" fill="#F24E1E"/>
+      <path d="M8 12c-2.208 0-4-1.792-4-4s1.792-4 4-4h4v8H8z" fill="#FF7262"/>
+      <circle cx="16" cy="12" r="4" fill="#1ABCFE"/>
+      <path d="M13.5 9.5l1.5 1.5-1.5 1.5M16 11h2" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  ),
 }
 
 const categories = [
@@ -335,11 +344,12 @@ const categories = [
   },
   {
     id: "web",
-    label: "CMS, Web & Acquisition",
+    label: "CMS & Web",
     icon: Globe,
     color: "oklch(0.55 0.13 160)",
     tools: [
       { name: "WordPress", desc: "Création de sites, contenus, SEO local" },
+      { name: "Figma Make", desc: "Génération de code à partir de designs Figma, prototypage assisté par IA" },
       { name: "Google Business Profile", desc: "Présence locale, avis clients, visibilité Google" },
       { name: "SEO local", desc: "Optimisation de visibilité et acquisition locale" },
     ],
