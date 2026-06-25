@@ -314,6 +314,7 @@ const categories = [
       { name: "RAG", desc: "Retrieval-Augmented Generation : LLMs contextuels et recherche sémantique" },
       { name: "Perplexity", desc: "Recherche augmentée, veille, analyse rapide" },
       { name: "Cursor", desc: "Prototypage rapide, assistance au développement et cadrage technique" },
+      { name: "Figma Make", desc: "Génération de code à partir de designs Figma, prototypage assisté par IA" },
     ],
   },
   {
@@ -349,7 +350,6 @@ const categories = [
     color: "oklch(0.55 0.13 160)",
     tools: [
       { name: "WordPress", desc: "Création de sites, contenus, SEO local" },
-      { name: "Figma Make", desc: "Génération de code à partir de designs Figma, prototypage assisté par IA" },
       { name: "Google Business Profile", desc: "Présence locale, avis clients, visibilité Google" },
       { name: "SEO local", desc: "Optimisation de visibilité et acquisition locale" },
     ],
