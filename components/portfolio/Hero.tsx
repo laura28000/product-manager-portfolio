@@ -104,7 +104,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
               className="text-base font-medium text-foreground max-w-xl leading-relaxed mb-5 text-pretty"
             >
-              Comprendre le terrain. Connecter les équipes. Transformer les irritants en solutions digitales utiles.
+              Transformer les vrais problèmes terrain en produits utiles, adoptés et mesurables.
             </motion.p>
 
             {/* Intro */}
@@ -116,12 +116,13 @@ export default function Hero() {
             >
               <p>
                 Après 12 ans à piloter des équipes dans des environnements exigeants, j&apos;ai
-                construit une approche Product ancrée dans les utilisateurs, le terrain et la
-                création de valeur.
+                construit une approche Product ancrée dans le réel : écouter les utilisateurs,
+                comprendre les contraintes, fédérer les bonnes personnes et livrer des solutions
+                qui créent un impact concret.
               </p>
               <p>
-                Mon objectif : partir des vrais problèmes, mobiliser les bonnes personnes et livrer
-                des solutions qui s&apos;adoptent, se mesurent et créent un impact concret.
+                Mon moteur : l&apos;humain, la curiosité et l&apos;envie de construire des produits
+                simples, utiles et réellement adoptés.
               </p>
             </motion.div>
           </div>

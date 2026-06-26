@@ -68,9 +68,9 @@ export default function WhoAmI() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4 text-balance"
         >
-          Comprendre, connecter, embarquer,{" "}
+          Un profil terrain, humain et curieux, tourné vers le{" "}
           <span className="italic" style={{ color: "var(--teal)" }}>
-            transformer.
+            produit.
           </span>
         </motion.h2>
 
@@ -82,13 +82,18 @@ export default function WhoAmI() {
           className="max-w-3xl mb-8 sm:mb-14 space-y-4 text-muted-foreground leading-relaxed text-sm"
         >
           <p>
-            Mes 12 ans en management opérationnel m&apos;ont appris qu&apos;un bon produit ne naît pas
-            seulement d&apos;une idée, mais d&apos;une lecture fine des besoins, des contraintes réelles
-            et des personnes impliquées.
+            Je suis un profil hybride : 12 ans de management opérationnel, une forte culture
+            terrain, une formation Product Manager, une formation Full Stack et une vraie
+            appétence pour l&apos;IA et l&apos;automatisation.
           </p>
           <p>
-            Curieuse, persévérante et orientée collectif, j&apos;aime créer du lien entre les équipes,
-            faciliter la collaboration et faire avancer les sujets avec clarté, énergie et exigence.
+            Ce qui me motive le plus, c&apos;est l&apos;humain : créer du lien, fédérer des
+            profils différents, accompagner les équipes et transformer une idée en solution
+            concrète.
+          </p>
+          <p>
+            J&apos;aime comprendre les problèmes en profondeur, poser les bonnes questions,
+            tester, itérer et faire avancer les sujets avec énergie, clarté et exigence.
           </p>
         </motion.div>
 
