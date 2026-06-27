@@ -2,6 +2,7 @@
 
 import { Briefcase, Code2, Users, TrendingUp } from "lucide-react"
 import { motion } from "framer-motion"
+import OrchestrationMap from "./OrchestrationMap"
 
 const cards = [
   {
@@ -150,6 +151,9 @@ export default function WhoAmI() {
             </div>
           </div>
         </motion.div>
+
+        {/* Carte signature : orchestration produit */}
+        <OrchestrationMap />
 
         {/* Cartes */}
         <motion.div
