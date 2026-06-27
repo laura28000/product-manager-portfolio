@@ -300,7 +300,7 @@ const categories = [
   },
   {
     id: "ai",
-    label: "IA générative & Assistants",
+    label: "Agents IA & Product Automation",
     icon: Bot,
     color: "oklch(0.58 0.14 300)",
     tools: [
@@ -432,8 +432,7 @@ export default function Skills() {
           transition={{ duration: 0.5 }}
           className="mb-10 max-w-xl text-xs text-muted-foreground leading-relaxed"
         >
-          L&apos;IA et l&apos;automatisation sont des moyens, jamais une finalité. Je les mobilise
-          lorsqu&apos;ils simplifient, fiabilisent ou libèrent du temps pour ce qui compte vraiment.
+          Je structure mes usages IA comme une équipe projet : un objectif, un contexte partagé, des rôles précis, des outils adaptés, des validations et des boucles d&apos;amélioration. L&apos;outil n&apos;est jamais le point de départ — le besoin l&apos;est toujours.
         </motion.p>
 
         {/* Category tabs */}

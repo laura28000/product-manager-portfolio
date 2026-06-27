@@ -62,7 +62,7 @@ export default function Hero() {
               className="text-xl font-semibold mb-1"
               style={{ color: "var(--teal)" }}
             >
-              Product Manager · Product Owner
+              Product Manager
             </motion.p>
 
             {/* Positioning line */}
@@ -72,7 +72,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
               className="text-sm font-medium text-muted-foreground mb-3 tracking-wide"
             >
-              Terrain · Business · IA · Transformation digitale
+              Concevoir des produits. Orchestrer des systèmes. Créer de la valeur.
             </motion.p>
 
             {/* Sub-badge */}
@@ -97,14 +97,24 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            {/* Tagline / sous-titre hero */}
+            {/* Tagline */}
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="text-base font-medium text-foreground max-w-xl leading-relaxed mb-5 text-pretty"
+              className="text-base font-medium text-foreground max-w-xl leading-relaxed mb-2 text-pretty"
             >
-              Transformer les vrais problèmes terrain en produits utiles, adoptés et mesurables.
+              Transformer la complexité en produits utiles, en orchestrant humains, équipes tech et agents IA autour d&apos;un objectif commun.
+            </motion.p>
+
+            {/* Sous-titre */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
+              className="text-sm text-muted-foreground max-w-xl leading-relaxed mb-5 text-pretty"
+            >
+              Product Manager passionnée par la conception de produits utiles, la collaboration entre les équipes et l&apos;orchestration de systèmes assistés par IA.
             </motion.p>
 
             {/* Intro */}
@@ -115,14 +125,10 @@ export default function Hero() {
               className="space-y-3 text-sm text-muted-foreground max-w-xl leading-relaxed"
             >
               <p>
-                Après 12 ans à piloter des équipes dans des environnements exigeants, j&apos;ai
-                construit une approche Product ancrée dans le réel : écouter les utilisateurs,
-                comprendre les contraintes, fédérer les bonnes personnes et livrer des solutions
-                qui créent un impact concret.
+                Pendant plus de 12 ans, j&apos;ai piloté des équipes dans des environnements opérationnels exigeants : clarifier les objectifs, fédérer les expertises, coordonner, communiquer et mesurer l&apos;impact.
               </p>
               <p>
-                Mon moteur : l&apos;humain, la curiosité et l&apos;envie de construire des produits
-                simples, utiles et réellement adoptés.
+                Aujourd&apos;hui, j&apos;applique cette même logique au Product Management — avec des équipes composées d&apos;utilisateurs, de développeurs, de métiers et d&apos;agents IA.
               </p>
             </motion.div>
           </div>

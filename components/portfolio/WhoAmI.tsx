@@ -7,27 +7,36 @@ const cards = [
   {
     icon: Briefcase,
     number: "01",
-    title: "Leadership & coordination multi-métiers",
-    text: "+12 ans à piloter des équipes, coordonner des parties prenantes aux profils variés et faire avancer des sujets complexes dans des environnements exigeants.",
+    title: "Fédérer & coordonner",
+    text: "+12 ans à piloter des équipes, clarifier les objectifs, créer les bonnes conditions et aligner des profils variés vers un but commun.",
   },
   {
     icon: Users,
     number: "02",
-    title: "Écoute & compréhension des utilisateurs",
-    text: "Partir des besoins et des contraintes réelles avant de proposer une solution. Identifier les bonnes personnes à interroger, distinguer symptômes et causes profondes, valider les hypothèses.",
+    title: "Comprendre le terrain",
+    text: "Partir des besoins et des contraintes réelles avant de proposer une solution. Identifier les bonnes personnes, distinguer symptômes et causes profondes, valider les hypothèses.",
   },
   {
     icon: TrendingUp,
     number: "03",
-    title: "Culture KPI & impact business",
-    text: "Chaque initiative doit répondre à un besoin réel et générer un gain mesurable : adoption, performance, temps économisé, qualité ou impact business. Pas d'initiative sans indicateur, pas d'indicateur sans décision.",
+    title: "Mesurer l'impact",
+    text: "Chaque initiative doit répondre à un besoin réel et générer un gain mesurable : adoption, performance, temps économisé ou impact business. Pas d'initiative sans indicateur, pas d'indicateur sans décision.",
   },
   {
     icon: Code2,
     number: "04",
-    title: "Product Building & IA",
-    text: "J'utilise l'IA comme copilote produit : discovery assistée, prototypage accéléré, exploration de codebase, implémentation de fonctionnalités et génération de Pull Requests avec Claude Code.",
+    title: "Orchestrer humains & agents IA",
+    text: "Je conçois les objectifs, les contextes, les workflows, les validations et les boucles d'amélioration permettant à humains, équipes tech et agents IA de collaborer efficacement autour d'un objectif produit commun.",
   },
+]
+
+const visionItems = [
+  "d'un objectif clair",
+  "d'un contexte partagé",
+  "d'un rôle précis",
+  "d'outils adaptés",
+  "de garde-fous",
+  "d'indicateurs de réussite",
 ]
 
 const containerVariants = {
@@ -44,7 +53,7 @@ const cardVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as number[] }
   },
 }
 
@@ -59,7 +68,7 @@ export default function WhoAmI() {
           transition={{ duration: 0.5 }}
           className="text-xs font-medium tracking-widest uppercase text-primary mb-3"
         >
-          Qui suis-je ?
+          Ma vision
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -68,41 +77,87 @@ export default function WhoAmI() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4 text-balance"
         >
-          Un profil terrain, humain et curieux, tourné vers le{" "}
+          Du management d&apos;équipes{" "}
           <span className="italic" style={{ color: "var(--teal)" }}>
-            produit.
+            à l&apos;orchestration produit & IA
           </span>
         </motion.h2>
 
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-sm text-muted-foreground max-w-2xl mb-10 leading-relaxed"
+        >
+          La valeur naît lorsque les bonnes personnes, les bons outils et le bon contexte travaillent ensemble.
+        </motion.p>
+
+        {/* MA VISION — pièce maîtresse */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="max-w-3xl mb-8 sm:mb-14 space-y-4 text-muted-foreground leading-relaxed text-sm"
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="rounded-xl p-6 sm:p-8 mb-10 border-2"
+          style={{
+            background: "color-mix(in oklch, var(--teal) 6%, var(--background))",
+            borderColor: "var(--teal)",
+          }}
         >
-          <p>
-            Je suis un profil hybride : 12 ans de management opérationnel, une forte culture
-            terrain, une formation Product Manager, une formation Full Stack et une vraie
-            appétence pour l&apos;IA et l&apos;automatisation.
+          <p
+            className="text-[10px] font-bold uppercase tracking-widest mb-5 flex items-center gap-2"
+            style={{ color: "var(--teal)" }}
+          >
+            <span className="w-2 h-2 rounded-full shrink-0" style={{ background: "var(--teal)" }} />
+            Ma vision
           </p>
-          <p>
-            Ce qui me motive le plus, c&apos;est l&apos;humain : créer du lien, fédérer des
-            profils différents, accompagner les équipes et transformer une idée en solution
-            concrète.
+
+          <p className="text-base sm:text-lg font-semibold text-foreground mb-3 leading-snug">
+            Je n&apos;utilise pas simplement l&apos;IA.
           </p>
-          <p>
-            J&apos;aime comprendre les problèmes en profondeur, poser les bonnes questions,
-            tester, itérer et faire avancer les sujets avec énergie, clarté et exigence.
+          <p className="text-sm text-muted-foreground leading-relaxed mb-8">
+            Je conçois et j&apos;orchestre des systèmes où humains, équipes techniques et agents IA collaborent autour d&apos;un objectif produit commun.
           </p>
+
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div>
+              <p className="text-sm font-medium text-foreground mb-4">
+                Comme une équipe humaine, un agent IA a besoin :
+              </p>
+              <ul className="space-y-2.5">
+                {visionItems.map((item) => (
+                  <li key={item} className="flex items-center gap-2.5 text-sm text-muted-foreground">
+                    <span
+                      className="w-1.5 h-1.5 rounded-full shrink-0"
+                      style={{ background: "var(--teal)" }}
+                    />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div
+              className="rounded-lg p-5 flex flex-col justify-center"
+              style={{ background: "color-mix(in oklch, var(--teal) 9%, var(--background))" }}
+            >
+              <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                Mon rôle reste identique à celui que j&apos;exerçais en management opérationnel :
+              </p>
+              <p className="text-base font-semibold text-foreground leading-snug">
+                clarifier, fédérer, coordonner et créer les conditions de la réussite collective.
+              </p>
+            </div>
+          </div>
         </motion.div>
 
+        {/* Cartes */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid sm:grid-cols-2 gap-6 mb-6"
+          className="grid sm:grid-cols-2 gap-6"
         >
           {cards.map((card) => (
             <motion.div
@@ -127,49 +182,6 @@ export default function WhoAmI() {
               <p className="text-sm text-muted-foreground leading-relaxed">{card.text}</p>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Ma vision de l'IA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="rounded-xl p-5 sm:p-6 mb-8 border"
-          style={{
-            background: "color-mix(in oklch, var(--teal) 5%, var(--background))",
-            borderColor: "color-mix(in srgb, var(--teal) 25%, transparent)",
-          }}
-        >
-          <p
-            className="text-[10px] font-semibold uppercase tracking-widest mb-3 flex items-center gap-2"
-            style={{ color: "var(--teal)" }}
-          >
-            <span className="w-2 h-2 rounded-full shrink-0" style={{ background: "var(--teal)" }} />
-            Ma vision de l&apos;IA
-          </p>
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            Mon approche reste pragmatique : l&apos;IA n&apos;est pertinente que si elle répond à un
-            besoin réel, crée un gain mesurable et apporte plus de valeur qu&apos;elle ne génère de
-            complexité ou de coût.
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="rounded-xl px-5 sm:px-8 py-5 sm:py-6 max-w-3xl mx-auto text-center"
-          style={{ background: "var(--teal-dim)", border: "1px solid color-mix(in srgb, var(--teal) 20%, transparent)" }}
-        >
-          <p className="text-base text-muted-foreground leading-relaxed">
-            <span className="font-semibold text-foreground">Ma conviction :</span>{" "}
-            un bon produit, c&apos;est celui que les utilisateurs adoptent parce qu&apos;il résout un
-            vrai problème. Le construire exige de relier les équipes, de comprendre les contraintes du
-            terrain et de ne jamais perdre de vue la valeur créée.{" "}
-            <span className="text-foreground font-medium">Avec méthode, énergie collective et sens de l&apos;impact.</span>
-          </p>
         </motion.div>
       </div>
     </section>

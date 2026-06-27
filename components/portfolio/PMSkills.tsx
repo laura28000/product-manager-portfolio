@@ -41,10 +41,10 @@ const skillGroups = [
   },
   {
     icon: Bot,
-    title: "IA & automatisation produit",
+    title: "Orchestration IA & Workflows Produit",
     description:
-      "Mobiliser l'IA et l'automatisation au bon moment : veille, synthèse de feedbacks, aide à la priorisation, génération de livrables PM et automatisation de processus avec Make, n8n ou Zapier.",
-    skills: ["IA appliquée", "Claude Code", "Make / n8n", "Zapier"],
+      "J'utilise Claude Code, Claude, MCP, GitHub, Vercel et Notion comme environnement de travail quotidien pour explorer une codebase, construire le bon contexte, orchestrer plusieurs agents et accélérer la livraison produit.",
+    skills: ["Context Engineering", "Workflow Design", "Human in the Loop", "Agent Design", "Product Automation", "Claude Code"],
   },
 ]
 

@@ -5,7 +5,8 @@ import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
 const navLinks = [
-  { label: "Qui suis-je ?", href: "#about" },
+  { label: "Vision", href: "#about" },
+  { label: "Méthode", href: "#method" },
   { label: "Projets", href: "#projects" },
   { label: "Compétences", href: "#pm-skills" },
   { label: "Outils", href: "#skills" },

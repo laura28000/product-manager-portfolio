@@ -451,19 +451,19 @@ function CaseStudyCard({ project }: { project: (typeof caseStudies)[0] }) {
             <div className="space-y-5 mb-5">
               <div>
                 <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-                  Approche
+                  Vision & Architecture
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">{project.approach}</p>
               </div>
               <div>
                 <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-                  Solution & livrables
+                  Décisions & Arbitrages
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">{project.solution}</p>
               </div>
               <div>
                 <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground mb-3">
-                  Résultats
+                  Résultats & Apprentissages
                 </p>
                 <ul className="grid sm:grid-cols-2 gap-2">
                   {project.results.map((r) => (
@@ -558,9 +558,7 @@ export default function Projects() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-muted-foreground max-w-xl mb-12 leading-relaxed text-sm"
         >
-          Product Management, IA appliquée et performance business : chaque cas produit illustre
-          ma capacité à identifier un problème réel, structurer une démarche produit rigoureuse
-          et livrer une solution à impact mesurable.
+          Des cas produits réels : pour chaque projet, je raconte le problème, ma vision, les décisions prises, les arbitrages et les apprentissages. Je montre mon raisonnement, pas seulement les livrables.
         </motion.p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-20">
