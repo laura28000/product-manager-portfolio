@@ -2,6 +2,7 @@ import Navbar from "@/components/portfolio/Navbar"
 import Hero from "@/components/portfolio/Hero"
 import WhoAmI from "@/components/portfolio/WhoAmI"
 import BuildMethod from "@/components/portfolio/BuildMethod"
+import Manifesto from "@/components/portfolio/Manifesto"
 import Projects from "@/components/portfolio/Projects"
 import Skills from "@/components/portfolio/Skills"
 import PMSkills from "@/components/portfolio/PMSkills"
@@ -16,6 +17,7 @@ export default function Page() {
       <Hero />
       <WhoAmI />
       <BuildMethod />
+      <Manifesto />
       <Projects />
       <PMSkills />
       <Skills />

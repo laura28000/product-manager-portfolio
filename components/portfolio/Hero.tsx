@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowDown, MapPin } from "lucide-react"
+import { MapPin } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden overflow-x-hidden pt-20"
+      className="relative flex flex-col items-center justify-start px-6 overflow-hidden overflow-x-hidden pt-24 pb-4"
     >
       {/* Subtle background grid */}
       <div
@@ -27,7 +27,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-5xl mx-auto w-full">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           {/* Left: Text content */}
           <div>
             {/* Badge */}
@@ -59,20 +59,32 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-xl font-semibold mb-1"
+              className="text-xl font-semibold mb-2"
               style={{ color: "var(--teal)" }}
             >
-              Product Manager
+              Product Manager · Workflows IA & <span className="whitespace-nowrap">Transformation digitale</span>
             </motion.p>
 
-            {/* Positioning line */}
+            {/* WHY */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
+              className="text-sm text-muted-foreground mb-10 leading-relaxed"
+            >
+              Faire collaborer les bonnes expertises pour créer de la valeur.
+            </motion.p>
+
+            {/* HOW — Signature */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-              className="text-sm font-medium text-muted-foreground mb-3 tracking-wide"
+              className="text-sm font-semibold text-foreground mb-8 leading-loose"
             >
-              Concevoir des produits. Orchestrer des systèmes. Créer de la valeur.
+              Fédérer les bonnes expertises.<br />
+              Orchestrer la collaboration.<br />
+              Créer des produits utiles.
             </motion.p>
 
             {/* Sub-badge */}
@@ -97,100 +109,56 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            {/* Tagline */}
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="text-base font-medium text-foreground max-w-xl leading-relaxed mb-2 text-pretty"
-            >
-              Transformer la complexité en produits utiles, en orchestrant humains, équipes tech et agents IA autour d&apos;un objectif commun.
-            </motion.p>
-
-            {/* Sous-titre */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
-              className="text-sm text-muted-foreground max-w-xl leading-relaxed mb-5 text-pretty"
-            >
-              Product Manager passionnée par la conception de produits utiles, la collaboration entre les équipes et l&apos;orchestration de systèmes assistés par IA.
-            </motion.p>
-
-            {/* Intro */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="space-y-3 text-sm text-muted-foreground max-w-xl leading-relaxed"
-            >
-              <p>
-                Pendant plus de 12 ans, j&apos;ai piloté des équipes dans des environnements opérationnels exigeants : clarifier les objectifs, fédérer les expertises, coordonner, communiquer et mesurer l&apos;impact.
-              </p>
-              <p>
-                Aujourd&apos;hui, j&apos;applique cette même logique au Product Management — avec des équipes composées d&apos;utilisateurs, de développeurs, de métiers et d&apos;agents IA.
-              </p>
-            </motion.div>
           </div>
 
-          {/* Right: Profile image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="relative flex justify-center"
-          >
-            <div className="relative w-52 h-64 sm:w-64 sm:h-80 md:w-72 md:h-88 rounded-2xl overflow-hidden border border-border shadow-xl">
-              <Image
-                src="/profile.jpg"
-                alt="Laura Caprara — Product Manager"
-                fill
-                className="object-cover object-top"
-                priority
-              />
-            </div>
-          </motion.div>
-        </div>
+          {/* Right: Profile image + CTAs */}
+          <div className="flex flex-col items-center gap-5">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              className="flex justify-center w-full"
+            >
+              <div className="relative w-52 h-64 sm:w-64 sm:h-80 md:w-72 md:h-88 rounded-2xl overflow-hidden border border-border shadow-xl">
+                <Image
+                  src="/profile.jpg"
+                  alt="Laura Caprara — Product Manager"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+            </motion.div>
 
-        {/* CTAs - Below the grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12"
-        >
-          <motion.a
-            href="#projects"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.98 }}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-md font-semibold text-sm transition-all duration-200"
-            style={{ background: "var(--teal)", color: "white" }}
-          >
-            Voir mes projets
-          </motion.a>
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.98 }}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-md font-semibold text-sm transition-all duration-300 hover:shadow-lg"
-            style={{ background: "transparent", color: "var(--teal)", border: "1.5px solid var(--teal)" }}
-          >
-            <span>Me contacter pour échanger</span>
-          </motion.a>
-        </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              className="flex flex-col gap-3 w-full max-w-[288px]"
+            >
+              <motion.a
+                href="#projects"
+                whileHover={{ scale: 1.02, y: -1 }}
+                whileTap={{ scale: 0.98 }}
+                className="flex items-center justify-center px-6 py-3 rounded-md font-semibold text-sm transition-all duration-200 w-full"
+                style={{ background: "var(--teal)", color: "white" }}
+              >
+                Voir mes projets
+              </motion.a>
+              <motion.a
+                href="#contact"
+                whileHover={{ scale: 1.02, y: -1 }}
+                whileTap={{ scale: 0.98 }}
+                className="flex items-center justify-center px-6 py-3 rounded-md font-semibold text-sm transition-all duration-300 hover:shadow-lg w-full"
+                style={{ background: "transparent", color: "var(--teal)", border: "1.5px solid var(--teal)" }}
+              >
+                Me contacter pour échanger
+              </motion.a>
+            </motion.div>
+          </div>
+        </div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.a
-        href="#about"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-muted-foreground hover:text-foreground transition-colors animate-bounce"
-        aria-label="Scroll vers le bas"
-      >
-        <ArrowDown size={18} />
-      </motion.a>
     </section>
   )
 }

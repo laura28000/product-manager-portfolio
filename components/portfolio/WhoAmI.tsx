@@ -26,8 +26,8 @@ const cards = [
   {
     icon: Code2,
     number: "04",
-    title: "Orchestrer humains & agents IA",
-    text: "Je conçois les objectifs, les contextes, les workflows, les validations et les boucles d'amélioration permettant à humains, équipes tech et agents IA de collaborer efficacement autour d'un objectif produit commun.",
+    title: "Orchestrer les expertises",
+    text: "Je conçois les contextes, les objectifs et les workflows qui permettent à toutes les parties prenantes — utilisateurs, équipes métier, développeurs et agents IA — de collaborer efficacement et de créer de la valeur ensemble.",
   },
 ]
 
@@ -54,13 +54,13 @@ const cardVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as number[] }
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }
   },
 }
 
 export default function WhoAmI() {
   return (
-    <section id="about" className="py-16 px-6 section-divider">
+    <section id="about" className="pt-8 pb-16 px-6 section-divider">
       <div className="max-w-6xl mx-auto">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -78,21 +78,54 @@ export default function WhoAmI() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4 text-balance"
         >
-          Du management d&apos;équipes{" "}
+          Les équipes ont changé.{" "}
+          <br className="hidden sm:block" />
           <span className="italic" style={{ color: "var(--teal)" }}>
-            à l&apos;orchestration produit & IA
+            Les principes, eux, n&apos;ont pas changé.
           </span>
         </motion.h2>
 
+        {/* Conviction */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-sm text-muted-foreground max-w-2xl mb-10 leading-relaxed"
+          className="text-base font-medium text-foreground mb-6 pl-4 leading-relaxed border-l-2"
+          style={{ borderColor: "var(--teal)" }}
         >
-          La valeur naît lorsque les bonnes personnes, les bons outils et le bon contexte travaillent ensemble.
+          Le Product Management est avant tout un métier d&apos;alignement.
         </motion.p>
+
+        {/* Parcours */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="space-y-3 text-sm text-muted-foreground mb-12 leading-relaxed"
+        >
+          <p>Pendant plus de 12 ans, j&apos;ai piloté des équipes dans des environnements opérationnels exigeants.</p>
+          <p>J&apos;y ai appris une chose essentielle.</p>
+          <p>Une équipe performante ne repose pas uniquement sur les talents individuels.</p>
+          <p>Elle repose sur :</p>
+          <ul className="space-y-1.5 pl-1">
+            {[
+              "un objectif partagé",
+              "un contexte commun",
+              "des responsabilités claires",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-2">
+                <span className="w-1 h-1 rounded-full shrink-0" style={{ background: "var(--teal)" }} />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p>Aujourd&apos;hui, j&apos;applique exactement les mêmes principes au Product Management.</p>
+          <p>J&apos;aligne les utilisateurs, les équipes métier, les développeurs et les outils d&apos;IA autour d&apos;un objectif produit commun.</p>
+          <p>Les outils évoluent.</p>
+          <p>Les principes de collaboration, eux, restent les mêmes.</p>
+        </motion.div>
 
         {/* MA VISION — pièce maîtresse */}
         <motion.div
@@ -114,17 +147,14 @@ export default function WhoAmI() {
             Ma vision
           </p>
 
-          <p className="text-base sm:text-lg font-semibold text-foreground mb-3 leading-snug">
-            Je n&apos;utilise pas simplement l&apos;IA.
-          </p>
-          <p className="text-sm text-muted-foreground leading-relaxed mb-8">
-            Je conçois et j&apos;orchestre des systèmes où humains, équipes techniques et agents IA collaborent autour d&apos;un objectif produit commun.
+          <p className="text-base sm:text-lg font-semibold text-foreground mb-8 leading-snug">
+            Une collaboration efficace repose toujours sur les mêmes fondamentaux.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6">
             <div>
               <p className="text-sm font-medium text-foreground mb-4">
-                Comme une équipe humaine, un agent IA a besoin :
+                Chaque expertise a besoin :
               </p>
               <ul className="space-y-2.5">
                 {visionItems.map((item) => (
@@ -139,14 +169,14 @@ export default function WhoAmI() {
               </ul>
             </div>
             <div
-              className="rounded-lg p-5 flex flex-col justify-center"
+              className="rounded-lg p-6 flex flex-col items-center justify-center text-center"
               style={{ background: "color-mix(in oklch, var(--teal) 9%, var(--background))" }}
             >
-              <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                Mon rôle reste identique à celui que j&apos;exerçais en management opérationnel :
+              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
+                Mon rôle, depuis toujours
               </p>
-              <p className="text-base font-semibold text-foreground leading-snug">
-                clarifier, fédérer, coordonner et créer les conditions de la réussite collective.
+              <p className="text-lg sm:text-xl font-bold text-foreground leading-snug">
+                Clarifier. Fédérer. Coordonner. Créer les conditions de la réussite collective.
               </p>
             </div>
           </div>

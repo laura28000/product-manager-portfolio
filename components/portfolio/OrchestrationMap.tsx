@@ -57,7 +57,7 @@ function CenterCard() {
       </div>
       <p className="text-sm font-bold text-foreground mb-2">Orchestration Produit</p>
       <p className="text-xs text-muted-foreground leading-relaxed">
-        Aligner les bonnes expertises autour d&apos;un objectif commun.
+        Le Product Manager aligne les expertises autour d&apos;un objectif commun.
       </p>
     </motion.div>
   )
@@ -146,7 +146,7 @@ export default function OrchestrationMap() {
           {/* Rangée 2 */}
           <NodeCard icon={Cog} title="Équipe Tech" items={["Concevoir", "Construire", "Livrer"]} />
           <CenterCard />
-          <NodeCard icon={Bot} title="Agents IA" items={["Contexte", "Workflows", "Automatisation"]} />
+          <NodeCard icon={Bot} title="IA & automatisations" items={["Contexte", "Workflows", "Automatisation"]} />
 
           {/* Rangée 3 */}
           <div />
@@ -166,7 +166,7 @@ export default function OrchestrationMap() {
         <CenterCard />
         <div className="grid grid-cols-2 gap-3">
           <NodeCard icon={Users} title="Utilisateurs" items={["Besoins", "Irritants", "Usages"]} />
-          <NodeCard icon={Bot} title="Agents IA" items={["Contexte", "Workflows", "Automatisation"]} />
+          <NodeCard icon={Bot} title="IA & automatisations" items={["Contexte", "Workflows", "Automatisation"]} />
           <NodeCard icon={Cog} title="Équipe Tech" items={["Concevoir", "Construire", "Livrer"]} />
           <NodeCard icon={TrendingUp} title="Business" items={["Valeur", "Impact", "Priorités"]} />
         </div>
@@ -205,7 +205,7 @@ export default function OrchestrationMap() {
         className="text-xs text-muted-foreground leading-relaxed mt-8 text-center max-w-2xl mx-auto italic pt-5"
         style={{ borderTop: "1px solid var(--border)" }}
       >
-        &ldquo;Je considère le Product Management comme un métier d&apos;orchestration : aligner les utilisateurs, les équipes, le business et les agents IA autour d&apos;un objectif commun pour créer des produits utiles, adoptés et mesurables.&rdquo;
+        &ldquo;Je considère le Product Management comme un métier d&apos;alignement : fédérer les utilisateurs, les équipes, le business et les outils d&apos;IA autour d&apos;un objectif commun pour créer des produits utiles, adoptés et mesurables.&rdquo;
       </motion.p>
     </div>
   )
