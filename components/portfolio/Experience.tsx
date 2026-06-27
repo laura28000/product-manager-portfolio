@@ -225,7 +225,7 @@ export default function Experience() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4 text-balance"
         >
-          +12 ans d&apos;expérience terrain{" "}
+          +15 ans d&apos;expérience terrain{" "}
           <span className="italic" style={{ color: "var(--teal)" }}>
             au service du produit
           </span>

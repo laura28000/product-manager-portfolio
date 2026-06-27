@@ -9,7 +9,7 @@ const cards = [
     icon: Briefcase,
     number: "01",
     title: "Fédérer & coordonner",
-    text: "+12 ans à piloter des équipes, clarifier les objectifs, créer les bonnes conditions et aligner des profils variés vers un but commun.",
+    text: "+15 ans à piloter des équipes, clarifier les objectifs, créer les bonnes conditions et aligner des profils variés vers un but commun.",
   },
   {
     icon: Users,
@@ -105,7 +105,7 @@ export default function WhoAmI() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="space-y-3 text-sm text-muted-foreground mb-12 leading-relaxed"
         >
-          <p>Pendant plus de 12 ans, j&apos;ai piloté des équipes dans des environnements opérationnels exigeants.</p>
+          <p>Pendant plus de 15 ans, j&apos;ai piloté des équipes dans des environnements opérationnels exigeants.</p>
           <p>J&apos;y ai appris une chose essentielle.</p>
           <p>Une équipe performante ne repose pas uniquement sur les talents individuels.</p>
           <p>Elle repose sur :</p>

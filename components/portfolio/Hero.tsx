@@ -95,7 +95,7 @@ export default function Hero() {
               className="flex flex-wrap items-center gap-3 mb-5"
             >
               <span className="text-sm font-medium text-muted-foreground bg-secondary border border-border px-2.5 py-1 rounded">
-                +12 ans de leadership opérationnel
+                +15 ans de leadership opérationnel
               </span>
               <span className="flex items-center gap-1 text-xs text-muted-foreground">
                 <MapPin size={12} />
